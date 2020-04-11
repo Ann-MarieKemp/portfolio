@@ -1,0 +1,4 @@
+.all-projects-box {
+  display: flex;
+  justify-content: space-around;
+}

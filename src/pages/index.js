@@ -1,3 +1,9 @@
 import React from "react"
+import Navbar from "../components/Navbar"
+import Projects from "./Projects"
 
-export default () => <div>Main Page</div>
+export default () => (
+  <>
+    <Navbar />
+  </>
+)
