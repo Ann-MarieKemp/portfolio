@@ -1,0 +1,6 @@
+#nav-bar-container {
+  display: flex;
+}
+.page-link {
+  margin-right: 1em;
+}
