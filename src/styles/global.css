@@ -1,6 +1,35 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   background-color: #4a7899;
+  font-family: Georgia, sans-serif;
 }
 p {
   color: #f1e0c5;
+  line-height: 1.75;
+  word-wrap: break-word;
+}
+.page-header {
+  margin-top: 1em;
+  font-size: 40px;
+  text-align: center;
+}
+.drop-caps {
+  font-size: 3.5em;
+  float: left;
+  line-height: 1;
+  height: 50px;
+}
+.description-text {
+  width: 75vw;
+  font-size: 18px;
+}
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
