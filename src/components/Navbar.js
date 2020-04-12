@@ -5,12 +5,25 @@ import "../styles/Navbar.css"
 const Navbar = props => {
   return (
     <div id="nav-bar-container">
-      <Link className="page-link" to="/Projects">
-        Projects
-      </Link>
       <Link className="page-link" to="/">
         Home
       </Link>
+      <Link className="page-link" to="/Projects">
+        Projects
+      </Link>
+
+      <a className="project-link" href="https://github.com/Ann-MarieKemp">
+        {" "}
+        Github
+      </a>
+
+      <a
+        className="page-link"
+        href="https://www.linkedin.com/in/ann-mariekemp/"
+      >
+        {" "}
+        LinkedIn
+      </a>
     </div>
   )
 }

@@ -1,6 +1,19 @@
-h1 {
-  color: #f1e0c5;
-}
 .single-project-box {
   display: flex;
+  border: 1px solid #16425b;
+  box-shadow: 3px;
+  background-color: #f1e0c5;
+  margin-top: 2em;
+  flex-direction: column;
+  width: 50vw;
+  border-radius: 5px;
+}
+.project-github {
+  color: #16425b;
+}
+.project-github:hover {
+  color: #f1e0c5;
+}
+.project-github:visited {
+  color: #16425b;
 }

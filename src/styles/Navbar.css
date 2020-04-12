@@ -2,13 +2,15 @@
   display: flex;
   background-color: #16425b;
   border-radius: 3px;
-  height: 2rem;
+  height: 3.5rem;
   align-items: center;
+  justify-content: space-around;
 }
 .page-link {
   margin-right: 1em;
   color: #f1e0c5;
   margin-left: 2em;
+  font-size: 18px;
 }
 .page-link:hover {
   color: #ffede1;

@@ -51,7 +51,9 @@ const AboutMe = props => {
           Edit, iNews, ENCO, Dante certified, XLR/CAT5 termination, soldering
         </p>
         <br />
-        <a href="https://github.com/Ann-MarieKemp"> Github</a>
+        <div className="external-links">
+         
+        </div>
       </div>
     </div>
   )

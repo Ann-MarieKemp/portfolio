@@ -4,7 +4,11 @@ import "../styles/SingleProject.css"
 const SingleProject = props => {
   return (
     <div className="single-project-box">
-      <h1>{props.projectName}</h1>
+      <p className="sub-header">{props.projectName}</p>
+      <a className="project-github" href={props.github}>
+        Github
+      </a>
+      <p className="project-text">{props.description}</p>
     </div>
   )
 }
