@@ -13,36 +13,37 @@ const AboutMe = props => {
 
       <div className="description-text">
         <p>
-          <span>A</span>fter getting my degree in theatrical production at the
-          University of Arizona I moved to New York City to be a part of one of
-          the largest theater communities in the world. I have been lucky to be
-          a part of many wonderful productions and mix many interesting new
-          works.
+          <span>A</span>fter getting her degree in theatrical production at the
+          University of Arizona Ann-Marie moved to New York City to be a part of
+          one of the largest theater communities in the world. She has been
+          lucky to be a part of many wonderful productions and mix many
+          interesting new works.
         </p>
         <br />
         <p>
-          In search of more stability and an interest in broadening my technical
-          knowledge I transitioned my skills to the world of broadcast and got
-          to dive deeper into my technical skills while applying them to the
-          fascinating industry of television news.{" "}
+          In search of more stability and an interest in broadening her
+          technical knowledge she transitioned her skills to the world of
+          broadcast and got to dive deeper into her technical skills while
+          applying them to the fascinating industry of television news.
         </p>
         <br />
         <p>
-          Currently I am leveraging the troubleshooting skills and ability to
-          adapt to new technologies that I have cultivated over the years and
-          applying them to a new realm of technical knowledge as I transition
-          into a career as a full stack software engineer.
+          Currently she is leveraging the troubleshooting skills and ability to
+          adapt to new technologies that she has cultivated over the years and
+          is applying them to a new realm of technical knowledge as she
+          transitions into a career as a full stack software engineer.
         </p>
         <br />
         <p>
-          I am excited to continue this journey as I look for opportunities in
-          the tech sector and I hope to be able to expand on my newfound love of
-          all things front-end with an emphasis on React, React Native, and CSS.
+          She is excited to continue this journey as she looks for opportunities
+          in the tech sector and she hopes to be able to expand on her newfound
+          love of all things front-end with an emphasis on React, React Native,
+          and CSS.
         </p>
         <br />
         <p>
           Technical Skills: Javascript, Node, React, Redux, HTML, CSS, React
-          Native, Git, Sequelize, Express, Mocha, Firebase{" "}
+          Native, Git, Sequelize, Express, Mocha, Firebase
         </p>
         <br />
         <p>
@@ -51,8 +52,15 @@ const AboutMe = props => {
           Edit, iNews, ENCO, Dante certified, XLR/CAT5 termination, soldering
         </p>
         <br />
-        <div className="external-links">
-         
+        <div className="crafts-container">
+          <p>
+            Outside of her professional work she spends her time as a maker of
+            all things. She loves to be productive with her time and she
+            inherited a love of baking and fiber arts from her mother and
+            grandmother. This means she spends her free time using her spinning
+            wheel, looms, crochet hooks, knitting needles and recipes to produce
+            projects and baked goods for her friends and family.
+          </p>
         </div>
       </div>
     </div>
