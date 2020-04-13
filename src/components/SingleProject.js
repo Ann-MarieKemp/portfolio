@@ -5,9 +5,14 @@ const SingleProject = props => {
   return (
     <div className="single-project-box">
       <p className="sub-header">{props.projectName}</p>
-      <a className="project-github" href={props.github}>
-        Github
-      </a>
+      <div className="project-link-container">
+        <a className="project-github" href={props.github}>
+          Github
+        </a>
+        <a className="project-github" href={props.deployLink}>
+          {props.linkText}
+        </a>
+      </div>
       <p className="project-text">{props.description}</p>
     </div>
   )

@@ -13,7 +13,6 @@ const Navbar = props => {
       </Link>
 
       <a className="project-link" href="https://github.com/Ann-MarieKemp">
-        {" "}
         Github
       </a>
 

@@ -7,13 +7,16 @@
   flex-direction: column;
   width: 50vw;
   border-radius: 5px;
+  padding: 12px;
 }
 .project-github {
   color: #16425b;
 }
-.project-github:hover {
-  color: #f1e0c5;
-}
+
 .project-github:visited {
   color: #16425b;
+}
+.project-link-container {
+  display: flex;
+  justify-content: space-between;
 }
