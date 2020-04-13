@@ -54,12 +54,26 @@ const AboutMe = props => {
         <br />
         <div className="crafts-container">
           <p>
-            Outside of her professional work she spends her time as a maker of
-            all things. She loves to be productive with her time and she
-            inherited a love of baking and fiber arts from her mother and
-            grandmother. This means she spends her free time using her spinning
-            wheel, looms, crochet hooks, knitting needles and recipes to produce
-            projects and baked goods for her friends and family.
+            When she's not coding or binging Front End Masters courses she
+            spends her time as a maker of all things. She loves to be productive
+            with her time and she inherited a love of baking and fiber arts from
+            her mother and grandmother. This means she spends her free time
+            using her spinning wheel, looms, crochet hooks, knitting needles and
+            recipes to produce projects and baked goods for her friends and
+            family.
+          </p>
+          <br />
+          <p>
+            You can check out some of her craft projects including the time she
+            baked a new dessert every week for a year here:
+          </p>
+          <Link></Link>
+        </div>
+        <div>
+          <p>
+            Ann-Marie lives in New York City with her wonderful husband and two
+            cats Cotton and Carnival. As a reward for making it this far down
+            the page here are some photos of her kitties:
           </p>
         </div>
       </div>
