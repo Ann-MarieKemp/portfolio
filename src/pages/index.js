@@ -7,6 +7,5 @@ export default () => (
   <>
     <Navbar />
     <AboutMe />
-    <Projects />
   </>
 )

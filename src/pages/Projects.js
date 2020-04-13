@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar"
 const Projects = props => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <p className="page-header">Projects </p>
       <div className="all-projects-box">
         <SingleProject
