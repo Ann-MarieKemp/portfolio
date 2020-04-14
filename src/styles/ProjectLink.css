@@ -1,11 +1,16 @@
 .link-container {
   width: 200px;
-  color: #16425b;
+  background-color: #16425b;
   height: 100px;
-  border: 2px solid black;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   word-wrap: break-word;
   text-align: center;
   align-content: center;
+}
+.category-link {
+  color: #ffede1;
+  align-self: center;
+  text-decoration: none;
 }

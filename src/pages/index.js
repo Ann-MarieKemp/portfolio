@@ -14,6 +14,12 @@ export default () => (
         <p>Full Stack Software Engineer based in New York City.</p>
       </div>
     </div>
-    <ProjectLink />
+    <div>
+      <ProjectLink
+        linkTo="/AboutMe"
+        linkText="About Ann-Marie"
+        hoverText="Learn more about Ann-Marie"
+      />
+    </div>
   </>
 )

@@ -7,3 +7,7 @@
 .main-name {
   margin-top: 2.5em;
 }
+.link-outer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
