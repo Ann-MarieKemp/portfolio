@@ -17,7 +17,6 @@ const Navbar = props => {
       <Link className="page-link" to="/AboutMe">
         Crafts
       </Link>
-
       <a className="page-link" href="https://github.com/Ann-MarieKemp">
         Github
       </a>
@@ -26,7 +25,6 @@ const Navbar = props => {
         className="page-link"
         href="https://www.linkedin.com/in/ann-mariekemp/"
       >
-        {" "}
         LinkedIn
       </a>
     </div>

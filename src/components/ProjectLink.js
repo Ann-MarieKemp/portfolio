@@ -21,7 +21,9 @@ const ProjectLink = props => {
           {linkText}
         </Link>
       ) : (
-        <p>test</p>
+        <Link className="category-link" to={linkTo}>
+          {linkText}
+        </Link>
       )}
     </div>
   )
