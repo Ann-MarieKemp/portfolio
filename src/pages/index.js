@@ -16,7 +16,7 @@ export default () => (
           <ProjectLink linkTo="/AboutMe" linkText="About Ann-Marie" />
           <ProjectLink linkTo="/Projects" linkText="Projects" />
           <ProjectLink linkTo="/Crafts" linkText="Crafts" />
-          <ProjectLink linkTo="/Contact Info" linkText="Contact Info" />
+          <ProjectLink linkTo="/ContactInfo" linkText="Contact Info" />
         </div>
       </div>
     </div>
