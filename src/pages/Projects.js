@@ -2,6 +2,11 @@ import React from "react"
 import SingleProject from "../components/SingleProject"
 import "../styles/Projects.css"
 import Navbar from "../components/Navbar"
+import {
+  dotEaterDescription,
+  violetVinesDescription,
+  recipixDescription,
+} from "../constants/projectvariables"
 
 const Projects = props => {
   return (
@@ -32,14 +37,5 @@ const Projects = props => {
     </>
   )
 }
-
-const dotEaterDescription =
-  "Dot Eater is a multiplayer online clone of the classic Namco Bandai game Pacman Battle Royale. Players maneuver around the board eating dots and their friends while running away from our intelligent ghost. The last Pacman standing is the winner"
-
-const recipixDescription =
-  "Recipix is a mobile application built with React Native that allows a user to take or choose a photo of a handwritten recipe and converts the text into a save-able digital format"
-
-const violetVinesDescription =
-  "Violet Vines is an e-commerce bouquet shop with cart functionality built for The Grace Hopper Program at Fullstack Academy of Code"
 
 export default Projects

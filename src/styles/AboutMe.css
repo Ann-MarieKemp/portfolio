@@ -4,3 +4,50 @@
   margin-bottom: 1em;
   margin-top: 1em;
 }
+.main-name {
+  margin-top: 2.5em;
+}
+.link-outer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills-wrapper {
+  background-color: #16425b;
+  width: 300px;
+  padding-bottom: 1em;
+  border-radius: 3px;
+}
+.skills-list {
+  text-align: center;
+}
+.crafts-link {
+  color: #ffede1;
+  align-self: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+.crafts-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted #ffede1;
+  padding: 0 10px 10px 10px;
+}
+.crafts-link:hover {
+  color: #16425b;
+}
+.mainpage-project-link-container {
+  display: flex;
+  width: 90vw;
+  justify-content: space-evenly;
+}
+.about-me-tag.index {
+  flex-direction: column;
+}
+.about-me-tag.index p {
+  flex-direction: column;
+  text-align: center;
+}

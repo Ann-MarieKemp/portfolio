@@ -13,7 +13,7 @@ const SingleProject = props => {
           {props.linkText}
         </a>
       </div>
-      <p className="project-text">{props.description}</p>
+      <p className="project-github">{props.description}</p>
     </div>
   )
 }
