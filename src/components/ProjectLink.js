@@ -18,7 +18,9 @@ const ProjectLink = props => {
       {hover ? (
         <p>Learn more about Ann-Marie</p>
       ) : (
-        <Link to="/AboutMe">About Ann-Marie</Link>
+        <Link className="page-link" to="/AboutMe">
+          About Ann-Marie
+        </Link>
       )}
     </div>
   )
