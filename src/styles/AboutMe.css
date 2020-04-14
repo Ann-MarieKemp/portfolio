@@ -24,3 +24,21 @@
 .skills-list {
   text-align: center;
 }
+
+.crafts-link {
+  color: #ffede1;
+  align-self: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+.crafts-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 2px dotted #ffede1;
+  padding: 0 10px 10px 10px;
+}
+.crafts-link:hover {
+  color: #16425b;
+}
+.crafts-link:visited {
+}

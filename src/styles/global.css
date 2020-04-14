@@ -34,9 +34,9 @@ p {
   flex-direction: column;
   align-items: center;
 }
-a:visited {
+/* a:visited {
   color: #4a7899;
-}
+} */
 a:hover {
   color: #ffede1;
 }
@@ -51,4 +51,13 @@ a:hover {
   margin-top: 0.2em;
   font-size: 24px;
   text-align: center;
+}
+.category-link {
+  color: #ffede1;
+  align-self: center;
+  text-decoration: none;
+  font-size: 24px;
+}
+.category-link:hover {
+  color: #4a7899;
 }

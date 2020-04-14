@@ -14,6 +14,9 @@ const Navbar = props => {
       <Link className="page-link" to="/AboutMe">
         Bio
       </Link>
+      <Link className="page-link" to="/AboutMe">
+        Crafts
+      </Link>
 
       <a className="page-link" href="https://github.com/Ann-MarieKemp">
         Github
