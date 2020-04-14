@@ -1,0 +1,10 @@
+.link-container {
+  width: 200px;
+  color: #16425b;
+  height: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  text-align: center;
+}

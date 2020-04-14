@@ -11,8 +11,11 @@ const Navbar = props => {
       <Link className="page-link" to="/Projects">
         Projects
       </Link>
+      <Link className="page-link" to="/AboutMe">
+        Bio
+      </Link>
 
-      <a className="project-link" href="https://github.com/Ann-MarieKemp">
+      <a className="page-link" href="https://github.com/Ann-MarieKemp">
         Github
       </a>
 

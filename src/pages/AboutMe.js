@@ -5,11 +5,7 @@ import { Link } from "gatsby"
 const AboutMe = props => {
   return (
     <div className="main-page-container">
-      <p className="page-header">Ann-Marie Kemp</p>
-
-      <div className="about-me-tag">
-        <p>Full Stack Software Engineer based in New York City.</p>
-      </div>
+      <p className="page-header">About Ann-Marie</p>
 
       <div className="description-text">
         <p>
