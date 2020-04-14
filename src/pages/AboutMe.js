@@ -37,16 +37,52 @@ const AboutMe = props => {
           and CSS.
         </p>
         <br />
-        <p>
-          Technical Skills: Javascript, Node, React, Redux, HTML, CSS, React
-          Native, Git, Sequelize, Express, Mocha, Firebase
-        </p>
-        <br />
-        <p>
-          Audio Technical Skills: Calrec Sigma, DiGiCo SD9/10/11, SSL C100,
-          Studer Vista 5, Cadac J-Type, Yamaha CL5, Pro Tools, Logic, Qlab, AZ
-          Edit, iNews, ENCO, Dante certified, XLR/CAT5 termination, soldering
-        </p>
+        <div className="skills-container">
+          <div className="skills-wrapper">
+            <p className="sub-header-cream">Technical Skills</p>
+            <p className="skills-list">
+              JavaScript
+              <br /> Node
+              <br /> React
+              <br /> Redux <br />
+              HTML
+              <br /> CSS <br /> React Native
+              <br /> Git
+              <br />
+              Sequelize <br /> Express
+              <br />
+              Mocha
+              <br /> Firebase
+              <br /> PostgreSQL
+              <br /> Git
+              <br />
+              Github
+            </p>
+          </div>
+          <div className="skills-wrapper">
+            <p className="sub-header-cream">Audio Technical Skills</p>
+
+            <p className="skills-list">
+              Calrec Sigma
+              <br /> DiGiCo SD9/10/11
+              <br /> SSL C100
+              <br /> Studer Vista 5<br /> Cadac J-Type
+              <br /> Yamaha CL Series
+              <br />
+              Pro Tools
+              <br /> Logic
+              <br />
+              Qlab
+              <br /> AZ Edit
+              <br /> iNews
+              <br /> ENCO
+              <br />
+              Dante certified
+              <br /> XLR/CAT5 termination
+              <br /> soldering
+            </p>
+          </div>
+        </div>
         <br />
         <div className="crafts-container">
           <p>

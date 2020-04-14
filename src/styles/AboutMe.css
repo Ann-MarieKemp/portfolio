@@ -11,3 +11,15 @@
   display: flex;
   justify-content: space-evenly;
 }
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills-wrapper {
+  background-color: #16425b;
+  width: 300px;
+  padding-bottom: 1em;
+}
+.skills-list {
+  text-align: center;
+}
