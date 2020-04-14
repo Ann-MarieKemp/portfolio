@@ -14,12 +14,12 @@ const Navbar = props => {
       <Link className="page-link" to="/AboutMe">
         Bio
       </Link>
-      <Link className="page-link" to="/Crafts">
+      {/* <Link className="page-link" to="/Crafts">
         Crafts
-      </Link>
-      <Link className="page-link" to="/ContactInfo">
+      </Link> */}
+      {/* <Link className="page-link" to="/ContactInfo">
         Contact Info
-      </Link>
+      </Link> */}
       <a className="page-link" href="https://github.com/Ann-MarieKemp">
         Github
       </a>
