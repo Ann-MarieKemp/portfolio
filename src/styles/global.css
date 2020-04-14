@@ -46,3 +46,9 @@ a:hover {
   text-align: center;
   color: #16425b;
 }
+.sub-header-cream {
+  color: #ffede1;
+  margin-top: 0.2em;
+  font-size: 24px;
+  text-align: center;
+}
