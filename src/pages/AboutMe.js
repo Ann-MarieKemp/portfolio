@@ -50,11 +50,11 @@ const AboutMe = props => {
         <br />
         <div className="crafts-container">
           <p>
-            When she's not coding or binging Front End Masters courses she
-            spends her time as a maker of all things. She loves to be productive
-            with her time and she inherited a love of baking and fiber arts from
-            her mother and grandmother. This means she spends her free time
-            using her spinning wheel, looms, crochet hooks, knitting needles and
+            When she's not coding or binging Frontend Masters courses she spends
+            her time as a maker of all things. She loves to be productive with
+            her time and she inherited a love of baking and fiber arts from her
+            mother and grandmother. This means she spends her free time using
+            her spinning wheel, looms, crochet hooks, knitting needles and
             recipes to produce projects and baked goods for her friends and
             family.
           </p>

@@ -18,7 +18,8 @@ export default () => (
       <ProjectLink
         linkTo="/AboutMe"
         linkText="About Ann-Marie"
-        hoverText="Learn more about Ann-Marie"
+        imgSrc="../../static/projectImages/portfolioImage.jpg"
+        altText="photo of A-M"
       />
     </div>
   </>

@@ -4,7 +4,7 @@ import "../styles/ProjectLink.css"
 
 const ProjectLink = props => {
   const [hover, setHover] = useState(false)
-  const { hoverText, linkTo, linkText } = props
+  const { linkTo, linkText, imgSrc, altText } = props
 
   return (
     <div
@@ -17,11 +17,11 @@ const ProjectLink = props => {
       }}
     >
       {hover ? (
-        <p>{hoverText}</p>
-      ) : (
         <Link className="category-link" to={linkTo}>
           {linkText}
         </Link>
+      ) : (
+        <p>test</p>
       )}
     </div>
   )
