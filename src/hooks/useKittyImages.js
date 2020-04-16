@@ -7,16 +7,18 @@ const useKittyImages = () => {
         nodes {
           childImageSharp {
             fixed {
-              ...GatsbyImageSharpFixed_withWebp
+              ...GatsbyImageSharpFixed
             }
             fluid {
               ...GatsbyImageSharpFluid_withWebp
             }
+            id
           }
         }
       }
     }
   `)
+  console.log(data.Images.nodes)
   return data.Images.nodes
 }
 

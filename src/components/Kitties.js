@@ -6,12 +6,11 @@ const Kitties = props => {
   const images = kittyImages()
   console.log(images)
 
-  const image = images[0]
   return (
     <>
       <p>This is kitties</p>
-      {images.map(image => {
-        console.log(image.childImageSharp.fixed)
+      {images.map(node => {
+        return <Image key={node.id} fixed={node.childImageSharp.fixed} />
       })}
     </>
   )

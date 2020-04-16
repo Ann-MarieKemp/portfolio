@@ -1,0 +1,12 @@
+.carousel-container {
+  display: flex;
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+  font-size: 23px;
+}
+.kitty-image {
+  width: 100px;
+  height: 100px;
+}

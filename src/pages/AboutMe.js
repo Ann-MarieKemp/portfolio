@@ -2,6 +2,7 @@ import React from "react"
 import "../styles/AboutMe.css"
 import { Link } from "gatsby"
 import Navbar from "../components/Navbar"
+import Carousel from "../components/Carousel"
 
 const AboutMe = props => {
   return (
@@ -87,7 +88,7 @@ const AboutMe = props => {
             </div>
           </div>
           <br />
-          {/* <div className="crafts-link-wrapper">
+          <div className="crafts-link-wrapper">
             <p className="sub-header-cream">Other Interests</p>
 
             <p>
@@ -116,7 +117,8 @@ const AboutMe = props => {
               two cats Cotton and Carnival. As a reward for making it this far
               down the page here are some photos of her kitties:
             </p>
-          </div> */}
+            <Carousel />
+          </div>
         </div>
       </div>
     </>
