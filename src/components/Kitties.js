@@ -4,12 +4,15 @@ import kittyImages from "../hooks/useKittyImages"
 
 const Kitties = props => {
   const images = kittyImages()
-  
+  console.log(images)
+
   const image = images[0]
   return (
     <>
       <p>This is kitties</p>
-      <Image fixed={image} />
+      {images.map(image => {
+        console.log(image.childImageSharp.fixed)
+      })}
     </>
   )
 }
