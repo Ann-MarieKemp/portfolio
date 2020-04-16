@@ -4,10 +4,12 @@ import Projects from "./Projects"
 import AboutMe from "./AboutMe"
 import "../styles/AboutMe.css"
 import ProjectLink from "../components/ProjectLink"
+import Kitties from "../components/Kitties"
 
 export default () => (
   <>
     <Navbar />
+    <Kitties />
     <div className="main-page-container">
       <p className="page-header main-name">Ann-Marie Kemp</p>
       <div className="about-me-tag index">
