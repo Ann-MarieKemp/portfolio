@@ -110,7 +110,7 @@ const AboutMe = props => {
               View Crafts
             </Link>
           </div>
-          <div>
+          <div className="nyc-info">
             <p>
               Ann-Marie lives in New York City with her wonderful husband and
               two cats Cotton and Carnival. As a reward for making it this far
