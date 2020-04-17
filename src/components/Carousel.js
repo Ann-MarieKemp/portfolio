@@ -3,7 +3,6 @@ import Arrow from "./Arrow"
 import Image from "gatsby-image"
 import kittyImages from "../hooks/useKittyImages"
 import "../styles/Carousel.css"
-import Kitty from "../components/Kitties"
 
 const Carousel = props => {
   const images = kittyImages()
@@ -20,15 +19,14 @@ const Carousel = props => {
           }}
         >
           {images.map((image, index) => {
-            if (imageIdx === index) {
-              return (
-                <Image
-                  key={image.childImageSharp.id}
-                  fluid={image.childImageSharp.fluid}
-                  imgStyle={{ objectFit: "contain" }}
-                />
-              )
-            }
+            return (
+              <Image
+                className={imageIdx === index ? "opacity-full" : "opacity-half"}
+                key={image.childImageSharp.id}
+                fluid={image.childImageSharp.fluid}
+                imgStyle={{ objectFit: "contain" }}
+              />
+            )
           })}
         </div>
       </div>

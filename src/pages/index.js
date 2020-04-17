@@ -1,10 +1,6 @@
 import React from "react"
-import Navbar from "../components/Navbar"
-import Projects from "./Projects"
-import AboutMe from "./AboutMe"
 import "../styles/AboutMe.css"
 import ProjectLink from "../components/ProjectLink"
-import useInstagram from "../hooks/useInstagram"
 import Layout from "../components/Layout"
 
 export default () => (
@@ -20,8 +16,8 @@ export default () => (
           <div className="mainpage-project-link-container">
             <ProjectLink linkTo="/AboutMe" linkText="About Ann-Marie" />
             <ProjectLink linkTo="/Projects" linkText="Projects" />
-            {/* <ProjectLink linkTo="/Crafts" linkText="Crafts" />
-          <ProjectLink linkTo="/ContactInfo" linkText="Contact Info" /> */}
+            <ProjectLink linkTo="/Crafts" linkText="Crafts" />
+            <ProjectLink linkTo="/ContactInfo" linkText="Contact Info" />
           </div>
         </div>
       </div>

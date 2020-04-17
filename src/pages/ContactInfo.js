@@ -1,10 +1,9 @@
 import React from "react"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 
 const ContactInfo = props => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className="main-page-container">
         <p className="page-header">Email: aedalenb@gmail.com</p>
         <a className="category-link" href="https://github.com/Ann-MarieKemp">
@@ -17,7 +16,7 @@ const ContactInfo = props => {
           LinkedIn
         </a>
       </div>
-    </>
+    </Layout>
   )
 }
 export default ContactInfo

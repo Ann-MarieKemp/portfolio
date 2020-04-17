@@ -1,7 +1,7 @@
 import React from "react"
 import SingleProject from "../components/SingleProject"
 import "../styles/Projects.css"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 import {
   dotEaterDescription,
   violetVinesDescription,

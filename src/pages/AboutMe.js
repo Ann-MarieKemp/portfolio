@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/AboutMe.css"
 import { Link } from "gatsby"
-import Navbar from "../components/Navbar"
 import Carousel from "../components/Carousel"
 import Layout from "../components/Layout"
 
