@@ -6,11 +6,8 @@ const useKittyImages = () => {
       Images: allFile(filter: { relativeDirectory: { eq: "kittyPhotos" } }) {
         nodes {
           childImageSharp {
-            fixed {
-              ...GatsbyImageSharpFixed
-            }
             fluid {
-              ...GatsbyImageSharpFluid_withWebp
+              ...GatsbyImageSharpFluid
             }
             id
           }

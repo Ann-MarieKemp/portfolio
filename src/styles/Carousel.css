@@ -1,12 +1,29 @@
-.carousel-container {
-  display: flex;
-}
 .arrow {
   width: 10px;
   height: 10px;
   font-size: 23px;
 }
-.kitty-image {
+.kitty-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+  border: 2px solid blue;
+}
+.kitty-slider-wrapper {
+  display: flex;
+}
+.kitty-slider::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 246px;
+  /* outline: 5px solid blue; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gatsby-image-wrapper {
   width: 100px;
-  height: 100px;
+  flex: 1;
+  border: 2px solid pink;
 }

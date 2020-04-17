@@ -1,19 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
-import kittyImages from "../hooks/useKittyImages"
+import "../styles/Carousel.css"
 
-const Kitties = props => {
-  const images = kittyImages()
-  console.log(images)
-
-  return (
-    <>
-      <p>This is kitties</p>
-      {images.map(node => {
-        return <Image key={node.id} fixed={node.childImageSharp.fixed} />
-      })}
-    </>
-  )
+const Kitty = props => {
+  return <Image fluid={props.fluid} imgStyle={{ objectFit: "contain" }} />
 }
 
-export default Kitties
+export default Kitty
