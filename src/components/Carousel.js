@@ -45,7 +45,7 @@ const Carousel = props => {
           clickFunc={() => {
             if (imageIdx !== images.length - 1) setImageIdx(imageIdx + 1)
           }}
-          graphic="next"
+          graphic="Next"
           disabled={imageIdx === images.length - 1}
         />
       </div>
