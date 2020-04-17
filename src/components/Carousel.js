@@ -8,21 +8,22 @@ import Kitty from "../components/Kitties"
 const Carousel = props => {
   const images = kittyImages()
   const [imageIdx, setImageIdx] = useState(0)
+  let trans = imageIdx * (100 / images.length)
 
   return (
     <div className="slider">
-      <Arrow
-        direction="left"
-        clickFunc={() => {
-          setImageIdx(imageIdx - 1)
-        }}
-        graphic="&#9666;"
-      />
-      <div className="kitty-slider">
-        <div className="kitty-slider-wrapper">
+      <div className={`kitty-slider active-slide-${imageIdx}`}>
+        <div
+          className="kitty-slider-wrapper"
+          style={{
+            transform: `translateX(-${trans}%)`,
+          }}
+        >
+          {console.log(trans, "idx")}
           {images.map(image => {
             return (
               <Image
+                key={image.childImageSharp.id}
                 fluid={image.childImageSharp.fluid}
                 imgStyle={{ objectFit: "contain" }}
               />
@@ -30,15 +31,24 @@ const Carousel = props => {
           })}
         </div>
       </div>
-      <Arrow
-        direction="right"
-        clickFunc={() => {
-          imageIdx >= 1
-            ? setImageIdx(imageIdx - 1)
-            : setImageIdx(images.length - 1)
-        }}
-        graphic="&#9656;"
-      />
+      <div className="arrow-container">
+        <Arrow
+          direction="left"
+          clickFunc={() => {
+            if (imageIdx !== 0) setImageIdx(imageIdx - 1)
+          }}
+          graphic="Prev"
+          disabled={imageIdx === 0}
+        />
+        <Arrow
+          direction="right"
+          clickFunc={() => {
+            if (imageIdx !== images.length - 1) setImageIdx(imageIdx + 1)
+          }}
+          graphic="next"
+          disabled={imageIdx === images.length - 1}
+        />
+      </div>
     </div>
   )
 }
