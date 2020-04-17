@@ -19,14 +19,16 @@ const Carousel = props => {
             transform: `translateX(-${trans}%)`,
           }}
         >
-          {images.map(image => {
-            return (
-              <Image
-                key={image.childImageSharp.id}
-                fluid={image.childImageSharp.fluid}
-                imgStyle={{ objectFit: "contain" }}
-              />
-            )
+          {images.map((image, index) => {
+            if (imageIdx === index) {
+              return (
+                <Image
+                  key={image.childImageSharp.id}
+                  fluid={image.childImageSharp.fluid}
+                  imgStyle={{ objectFit: "contain" }}
+                />
+              )
+            }
           })}
         </div>
       </div>

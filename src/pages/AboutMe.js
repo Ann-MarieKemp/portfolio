@@ -3,11 +3,11 @@ import "../styles/AboutMe.css"
 import { Link } from "gatsby"
 import Navbar from "../components/Navbar"
 import Carousel from "../components/Carousel"
+import Layout from "../components/Layout"
 
 const AboutMe = props => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className="main-page-container">
         <p className="page-header">About Ann-Marie</p>
 
@@ -121,7 +121,7 @@ const AboutMe = props => {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

@@ -10,8 +10,7 @@ import {
 
 const Projects = props => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <p className="page-header">Projects </p>
       <div className="all-projects-box">
         <SingleProject
@@ -34,7 +33,7 @@ const Projects = props => {
           deployLink="http://violet-vines.herokuapp.com/"
         />
       </div>
-    </>
+    </Layout>
   )
 }
 

@@ -30,5 +30,12 @@ module.exports = {
         username: `audiolindygirl`,
       },
     },
+    {
+      resolve: "gatsby-source-imgur-gallery-albums",
+      options: {
+        clientId: "17779bb10391106",
+        albumHashes: ["hoOGi"],
+      },
+    },
   ],
 }
