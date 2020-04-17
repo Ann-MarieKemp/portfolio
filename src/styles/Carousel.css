@@ -14,7 +14,7 @@
   display: block;
   width: 200px;
   height: 200px;
-  /* outline: 2px solid #ffede1; */
+  outline: 2px solid #ffede1;
   position: absolute;
   top: 0;
   left: 0;
@@ -35,4 +35,7 @@
   justify-content: space-around;
   border: 2px solid blue;
   margin-top: 12em;
+}
+.active-slide-1 {
+  opacity: 1;
 }

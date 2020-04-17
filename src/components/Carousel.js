@@ -19,7 +19,6 @@ const Carousel = props => {
             transform: `translateX(-${trans}%)`,
           }}
         >
-          {console.log(trans, "idx")}
           {images.map(image => {
             return (
               <Image
