@@ -11,24 +11,22 @@ const Carousel = props => {
 
   return (
     <div className="slider">
-      <div className={`kitty-slider active-slide-${imageIdx}`}>
-        <div
-          className="kitty-slider-wrapper"
-          style={{
-            transform: `translateX(-${trans}%)`,
-          }}
-        >
-          {images.map((image, index) => {
-            return (
-              <Image
-                className={imageIdx === index ? "opacity-full" : "opacity-half"}
-                key={image.childImageSharp.id}
-                fluid={image.childImageSharp.fluid}
-                imgStyle={{ objectFit: "contain" }}
-              />
-            )
-          })}
-        </div>
+      <div
+        className="kitty-slider-wrapper"
+        style={{
+          transform: `translateX(-${trans}%)`,
+        }}
+      >
+        {images.map((image, index) => {
+          return (
+            <Image
+              className={imageIdx === index ? "opacity-full" : "opacity-half"}
+              key={image.childImageSharp.id}
+              fluid={image.childImageSharp.fluid}
+              imgStyle={{ objectFit: "contain" }}
+            />
+          )
+        })}
       </div>
       <div className="arrow-container">
         <Arrow
