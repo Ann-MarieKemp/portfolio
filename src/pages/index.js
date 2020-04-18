@@ -7,7 +7,6 @@ import Image from "gatsby-image"
 
 export default () => {
   const portfolioPhoto = usePortfolioPhoto()
-  console.log(portfolioPhoto)
   return (
     <Layout>
       <div className="main-page-container">

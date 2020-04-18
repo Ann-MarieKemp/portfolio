@@ -8,6 +8,8 @@ const ProjectLink = props => {
 
   return (
     <div
+      role="link"
+      tabIndex={0}
       className="link-container"
       onMouseEnter={() => {
         setHover(true)

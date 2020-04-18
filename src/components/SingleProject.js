@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/SingleProject.css"
+import Video from './Video'
 
 const SingleProject = props => {
   return (
@@ -14,6 +15,7 @@ const SingleProject = props => {
         </a>
       </div>
       <p className="project-github">{props.description}</p>
+  <Video />
     </div>
   )
 }

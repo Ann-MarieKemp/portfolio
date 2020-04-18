@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const YoutubeKey = require("./secrets.js")
 const path = require(`path`)
 module.exports = {
   /* Your site config here */
@@ -50,6 +51,14 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/Layout.js"),
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
+        apiKey: YoutubeKey,
+        maxVideos: 50, // Defaults to 50
       },
     },
   ],

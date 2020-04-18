@@ -8,6 +8,7 @@ import {
   recipixDescription,
 } from "../constants/projectvariables"
 
+
 const Projects = props => {
   return (
     <Layout>

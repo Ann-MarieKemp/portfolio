@@ -16,7 +16,7 @@ const useInstagram = () => {
       }
     }
   `)
-  console.log(data.images.nodes)
+
   return data.images.nodes
 }
 
