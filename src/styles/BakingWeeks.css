@@ -1,10 +1,11 @@
 .post-preview-container {
   display: flex;
-  align-items: center;
   padding: 0 10px;
   background-color: #16425b;
   border-radius: 2px;
   box-shadow: 2px 2px black;
+  width: 23em;
+  flex-direction: column;
 }
 .post-preview-image {
   height: 100px;
@@ -17,4 +18,7 @@
 .baking-page {
   display: flex;
   flex-direction: column;
+}
+.description-text.baking {
+  text-align: center;
 }
