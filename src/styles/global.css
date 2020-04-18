@@ -34,9 +34,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-/* a:visited {
-  color: #4a7899;
-} */
+
 a:hover {
   color: #ffede1;
 }
@@ -60,4 +58,16 @@ a:hover {
 }
 .category-link:hover {
   color: #4a7899;
+}
+.portfolio-photo {
+  border-radius: 50%;
+  box-shadow: 3px 1px 8px black;
+}
+.portfolio-photo.gatsby-image-wrapper {
+  margin-top: -2.5em;
+}
+.main-page-header {
+  margin-top: -1.2em;
+  font-size: 50px;
+  text-align: center;
 }

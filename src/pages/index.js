@@ -2,12 +2,17 @@ import React from "react"
 import "../styles/AboutMe.css"
 import ProjectLink from "../components/ProjectLink"
 import Layout from "../components/Layout"
+import usePortfolioPhoto from "../hooks/usePortfolioPhoto"
+import Image from "gatsby-image"
 
-export default () => (
-  <>
+export default () => {
+  const portfolioPhoto = usePortfolioPhoto()
+  console.log(portfolioPhoto)
+  return (
     <Layout>
       <div className="main-page-container">
-        <p className="page-header main-name">Ann-Marie Kemp</p>
+        <Image className="portfolio-photo" fluid={portfolioPhoto} />
+        <p className="main-page-header ">Ann-Marie Kemp</p>
         <div className="about-me-tag index">
           <p>
             Full Stack Software Engineer based in New York City with a passion
@@ -22,5 +27,5 @@ export default () => (
         </div>
       </div>
     </Layout>
-  </>
-)
+  )
+}
