@@ -5,18 +5,18 @@ const useVideos = () => {
     query Videos {
       allYoutubeVideo {
         nodes {
+          videoId
           title
-          id
         }
       }
     }
   `)
-  return data.nodes.map(video => {
+  return data.allYoutubeVideo.nodes.map(video => {
     return {
-      videoId: video.id,
+      videoId: video.videoId,
       title: video.title,
     }
   })
 }
-console.log(useVideos())
+
 export default useVideos
