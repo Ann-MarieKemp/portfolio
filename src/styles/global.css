@@ -71,3 +71,8 @@ a:hover {
   font-size: 50px;
   text-align: center;
 }
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
