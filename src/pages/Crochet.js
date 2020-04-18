@@ -4,6 +4,7 @@ import Image from "gatsby-image"
 import useCrochet from "../hooks/useCrochet"
 import "../styles/BakingWeeks.css"
 import { Link } from "gatsby"
+import PostInfo from "../components/PostInfo"
 
 const Crochet = () => {
   const posts = useCrochet()
@@ -12,19 +13,13 @@ const Crochet = () => {
       <div className="main-page-container">
         <div className="baking-page">
           <p className="page-header">Crochet Projects</p>
-
-          {posts.map(post => {
-            return (
-              <div className="weeks-of-baking-container">
-                <div className="post-preview-container" key={post.title}>
-                  <Image className="post-preview-image" fluid={post.image} />
-                  <Link className="category-link" to={`/${post.slug}`}>
-                    {post.title}
-                  </Link>
-                </div>
-              </div>
-            )
-          })}
+          {posts.length ? (
+            <PostInfo posts={posts} />
+          ) : (
+            <p className="sub-header">
+              Sorry, there are no posts to display right now
+            </p>
+          )}
         </div>
       </div>
     </Layout>

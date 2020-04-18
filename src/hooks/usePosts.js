@@ -2,14 +2,12 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const usePosts = () => {
   const data = useStaticQuery(graphql`
-    query {
-      allMdx {
+    query baking {
+      allMdx(filter: { frontmatter: { category: { eq: "baking" } } }) {
         nodes {
-          id
           frontmatter {
-            author
-            slug
             title
+            slug
             image {
               childImageSharp {
                 fluid {
@@ -18,7 +16,6 @@ const usePosts = () => {
               }
             }
           }
-          excerpt
         }
       }
     }
