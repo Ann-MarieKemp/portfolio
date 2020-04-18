@@ -1,7 +1,8 @@
 import React from "react"
 import "../styles/SingleProject.css"
+import Video from "./Video"
 
-const SingleProject = props => {
+const SingleProject = ({ video, ...props }) => {
   return (
     <div className="single-project-box">
       <p className="sub-header">{props.projectName}</p>
@@ -14,6 +15,12 @@ const SingleProject = props => {
         </a>
       </div>
       <p className="project-github">{props.description}</p>
+      {video && (
+        <Video
+          videoSrcURL={`https://www.youtube.com/embed/${video.videoId}`}
+          videoTitle={video.title}
+        />
+      )}
     </div>
   )
 }

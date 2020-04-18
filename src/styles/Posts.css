@@ -1,0 +1,16 @@
+.post-image.gatsby-image-wrapper {
+  margin-top: -2em;
+}
+.post-text {
+  color: #f1e0c5;
+  width: 80vw;
+  font-size: 24px;
+  text-align: center;
+}
+.category-link.baking {
+  padding: 5px;
+  margin: 1em auto;
+}
+.category-link.baking:hover {
+  color: #16425b;
+}

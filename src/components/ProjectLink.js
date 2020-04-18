@@ -4,10 +4,12 @@ import "../styles/ProjectLink.css"
 
 const ProjectLink = props => {
   const [hover, setHover] = useState(false)
-  const { linkTo, linkText, imgSrc, altText } = props
+  const { linkTo, linkText } = props
 
   return (
     <div
+      role="link"
+      tabIndex={0}
       className="link-container"
       onMouseEnter={() => {
         setHover(true)

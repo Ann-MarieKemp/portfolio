@@ -1,12 +1,12 @@
 import React from "react"
 import "../styles/AboutMe.css"
-import { Link } from "gatsby"
-import Navbar from "../components/Navbar"
+import Carousel from "../components/Carousel"
+import Layout from "../components/Layout"
+import ProjectLink from "../components/ProjectLink"
 
 const AboutMe = props => {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className="main-page-container">
         <p className="page-header">About Ann-Marie</p>
 
@@ -87,7 +87,7 @@ const AboutMe = props => {
             </div>
           </div>
           <br />
-          {/* <div className="crafts-link-wrapper">
+          <div className="crafts-link-wrapper">
             <p className="sub-header-cream">Other Interests</p>
 
             <p>
@@ -105,21 +105,19 @@ const AboutMe = props => {
               Check out some of her craft projects including the time she baked
               a new dessert every week for a year here:
             </p>
-
-            <Link className="crafts-link" to="Crafts">
-              View Crafts
-            </Link>
+            <ProjectLink linkTo="/Crafts" linkText="View Crafts" />
           </div>
-          <div>
+          <div className="nyc-info">
             <p>
               Ann-Marie lives in New York City with her wonderful husband and
               two cats Cotton and Carnival. As a reward for making it this far
               down the page here are some photos of her kitties:
             </p>
-          </div> */}
+            <Carousel />
+          </div>
         </div>
       </div>
-    </>
+    </Layout>
   )
 }
 

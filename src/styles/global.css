@@ -34,9 +34,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-/* a:visited {
-  color: #4a7899;
-} */
+
 a:hover {
   color: #ffede1;
 }
@@ -47,7 +45,7 @@ a:hover {
   color: #16425b;
 }
 .sub-header-cream {
-  color: #ffede1;
+  color: #f1e0c5;
   margin-top: 0.2em;
   font-size: 24px;
   text-align: center;
@@ -60,4 +58,38 @@ a:hover {
 }
 .category-link:hover {
   color: #4a7899;
+}
+.portfolio-photo {
+  border-radius: 50%;
+  box-shadow: 3px 1px 8px black;
+}
+.portfolio-photo.gatsby-image-wrapper {
+  margin-top: -2.5em;
+}
+.main-page-header {
+  margin-top: -1.2em;
+  font-size: 50px;
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.page-header.crafts {
+  margin-top: 3em;
+}
+.resume.gatsby-image-wrapper {
+  width: 1100px;
+  height: 1400px;
+  margin-top: -10em;
+  box-shadow: 3px 3px black;
+}
+.sub-header.resume {
+  margin-top: 1em;
+  margin-bottom: -1em;
+  color: #f1e0c5;
+}
+.sub-header.resume:hover {
+  color: #16425b;
 }

@@ -1,17 +1,18 @@
 import React from "react"
 import SingleProject from "../components/SingleProject"
 import "../styles/Projects.css"
-import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 import {
   dotEaterDescription,
   violetVinesDescription,
   recipixDescription,
 } from "../constants/projectvariables"
+import useVideos from "../hooks/useVideos"
 
 const Projects = props => {
+  const videos = useVideos()
   return (
-    <>
-      <Navbar />
+    <Layout>
       <p className="page-header">Projects </p>
       <div className="all-projects-box">
         <SingleProject
@@ -20,11 +21,13 @@ const Projects = props => {
           description={dotEaterDescription}
           linkText="Play The Game!"
           deployLink="http://dot-eater.herokuapp.com/"
+          video={videos[0]}
         />
         <SingleProject
           projectName={"Recipix"}
           github="https://github.com/Ann-MarieKemp/Recipix"
           description={recipixDescription}
+          video={videos[1]}
         />
         <SingleProject
           projectName={"Violet Vines"}
@@ -34,7 +37,7 @@ const Projects = props => {
           deployLink="http://violet-vines.herokuapp.com/"
         />
       </div>
-    </>
+    </Layout>
   )
 }
 

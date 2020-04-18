@@ -1,0 +1,24 @@
+.post-preview-container {
+  display: flex;
+  padding: 0 10px;
+  background-color: #16425b;
+  border-radius: 2px;
+  box-shadow: 2px 2px black;
+  width: 23em;
+  flex-direction: column;
+}
+.post-preview-image {
+  height: 100px;
+  width: 100px;
+}
+.weeks-of-baking-container {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.baking-page {
+  display: flex;
+  flex-direction: column;
+}
+.description-text.baking {
+  text-align: center;
+}
