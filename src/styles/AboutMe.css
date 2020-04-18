@@ -33,6 +33,7 @@
   flex-direction: column;
   border: 2px dotted #ffede1;
   padding: 0 10px 10px 10px;
+  align-items: center;
 }
 .crafts-link:hover {
   color: #16425b;

@@ -3,6 +3,7 @@ import "../styles/AboutMe.css"
 import { Link } from "gatsby"
 import Carousel from "../components/Carousel"
 import Layout from "../components/Layout"
+import ProjectLink from "../components/ProjectLink"
 
 const AboutMe = props => {
   return (
@@ -105,10 +106,7 @@ const AboutMe = props => {
               Check out some of her craft projects including the time she baked
               a new dessert every week for a year here:
             </p>
-
-            <Link className="crafts-link" to="Crafts">
-              View Crafts
-            </Link>
+            <ProjectLink linkTo="/Crafts" linkText="View Crafts" />
           </div>
           <div className="nyc-info">
             <p>
