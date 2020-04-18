@@ -6,3 +6,10 @@
   width: 80vw;
   font-size: 24px;
 }
+.category-link.baking {
+  padding: 5px;
+  margin: 1em auto;
+}
+.category-link.baking:hover {
+  color: #16425b;
+}

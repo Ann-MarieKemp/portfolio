@@ -10,3 +10,11 @@
   height: 100px;
   width: 100px;
 }
+.weeks-of-baking-container {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.baking-page {
+  display: flex;
+  flex-direction: column;
+}
