@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-const usePosts = () => {
+const useKnitting = () => {
   const data = useStaticQuery(graphql`
-    query baking {
-      allMdx(filter: { frontmatter: { category: { eq: "baking" } } }) {
+    query knitting {
+      allMdx(filter: { frontmatter: { category: { eq: "knitting" } } }) {
         nodes {
           frontmatter {
             title
@@ -11,7 +11,8 @@ const usePosts = () => {
             image {
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  src
+                  srcSet
                 }
               }
             }
@@ -28,5 +29,4 @@ const usePosts = () => {
     image: post.frontmatter.image.childImageSharp.fluid,
   }))
 }
-
-export default usePosts
+export default useKnitting

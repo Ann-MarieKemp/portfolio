@@ -1,18 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Image from "gatsby-image"
-import useCrochet from "../hooks/useCrochet"
+import useSpinning from "../hooks/useSpinning"
 import "../styles/BakingWeeks.css"
-import { Link } from "gatsby"
 import PostInfo from "../components/PostInfo"
 
-const Crochet = () => {
-  const posts = useCrochet()
+const Spinning = () => {
+  const posts = useSpinning()
   return (
     <Layout>
       <div className="main-page-container">
         <div className="baking-page">
-          <p className="page-header">Crochet Projects</p>
+          <p className="page-header">Spinning Projects</p>
+
           {posts.length ? (
             <PostInfo posts={posts} />
           ) : (
@@ -26,4 +25,4 @@ const Crochet = () => {
   )
 }
 
-export default Crochet
+export default Spinning

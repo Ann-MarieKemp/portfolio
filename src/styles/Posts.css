@@ -1,5 +1,7 @@
 .post-image.gatsby-image-wrapper {
   margin-top: -2em;
+  width: 800px;
+  height: 600px;
 }
 .post-text {
   color: #f1e0c5;

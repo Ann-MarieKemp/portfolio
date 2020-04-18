@@ -1,18 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Image from "gatsby-image"
-import useCrochet from "../hooks/useCrochet"
+import useWeaving from "../hooks/useWeaving"
 import "../styles/BakingWeeks.css"
-import { Link } from "gatsby"
 import PostInfo from "../components/PostInfo"
 
-const Crochet = () => {
-  const posts = useCrochet()
+const Weaving = () => {
+  const posts = useWeaving()
   return (
     <Layout>
       <div className="main-page-container">
         <div className="baking-page">
-          <p className="page-header">Crochet Projects</p>
+          <p className="page-header">Weaving Projects</p>
+
           {posts.length ? (
             <PostInfo posts={posts} />
           ) : (
@@ -26,4 +25,4 @@ const Crochet = () => {
   )
 }
 
-export default Crochet
+export default Weaving
