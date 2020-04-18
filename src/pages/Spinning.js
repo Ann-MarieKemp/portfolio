@@ -1,17 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Image from "gatsby-image"
-import usePaper from "../hooks/usePaper"
+import useSpinning from "../hooks/useSpinning"
 import "../styles/BakingWeeks.css"
 import { Link } from "gatsby"
 
-const PaperCrafts = () => {
-  const posts = usePaper()
+const Spinning = () => {
+  const posts = useSpinning()
   return (
     <Layout>
       <div className="main-page-container">
         <div className="baking-page">
-          <p className="page-header">Knitting Projects</p>
+          <p className="page-header">Spinning Projects</p>
 
           {posts.map(post => {
             return (
@@ -31,4 +31,4 @@ const PaperCrafts = () => {
   )
 }
 
-export default PaperCrafts
+export default Spinning
