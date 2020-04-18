@@ -10,6 +10,13 @@ const usePosts = () => {
             author
             slug
             title
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           excerpt
         }
@@ -21,6 +28,7 @@ const usePosts = () => {
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,
     excerpt: post.excerpt,
+    image: post.frontmatter.image.childImageSharp.fluid,
   }))
 }
 
