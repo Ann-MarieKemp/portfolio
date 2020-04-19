@@ -3,7 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 const usePosts = () => {
   const data = useStaticQuery(graphql`
     query baking {
-      allMdx(filter: { frontmatter: { category: { eq: "baking" } } }) {
+      allMdx(
+        filter: { frontmatter: { category: { eq: "baking" } } }
+        sort: { fields: children___id, order: ASC }
+      ) {
         nodes {
           frontmatter {
             title
