@@ -12,13 +12,15 @@ const Weaving = () => {
         <div className="baking-page">
           <p className="page-header">Weaving Projects</p>
 
-          {posts.length ? (
-            <PostInfo posts={posts} />
-          ) : (
-            <p className="sub-header">
-              Sorry, there are no posts to display right now
-            </p>
-          )}
+          <div className="baking-box">
+            {posts.length ? (
+              <PostInfo posts={posts} />
+            ) : (
+              <p className="sub-header">
+                Sorry, there are no posts to display right now
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </Layout>

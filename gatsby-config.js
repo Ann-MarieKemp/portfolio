@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const YoutubeKey = require("./secrets.js")
+const siteMetadata = {
+  title: "Ann-Marie Kemp Portfolio Site",
+  description: "This is Ann-Marie's portfolio",
+}
 const path = require(`path`)
 module.exports = {
   /* Your site config here */
