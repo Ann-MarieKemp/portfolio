@@ -43,6 +43,7 @@
   width: 90vw;
   justify-content: space-evenly;
   padding: 0 2em;
+  flex-wrap: wrap;
 }
 .about-me-tag.index {
   flex-direction: column;

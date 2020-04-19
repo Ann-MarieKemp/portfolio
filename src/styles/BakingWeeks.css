@@ -14,11 +14,23 @@
 .weeks-of-baking-container {
   align-self: flex-start;
   margin-top: 10px;
+  width: 15em;
+  margin: 5px 2px;
+}
+
+.description-text.baking {
+  text-align: center;
+}
+
+.baking-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 80em;
+  width: 100vw;
 }
 .baking-page {
   display: flex;
   flex-direction: column;
-}
-.description-text.baking {
-  text-align: center;
+  align-items: center;
 }

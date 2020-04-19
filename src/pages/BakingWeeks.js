@@ -9,20 +9,23 @@ const BakingWeeks = () => {
   return (
     <Layout>
       <div className="main-page-container">
-        <div className="baking-page">
+        <div className="baking-page baking-links">
           <p className="page-header">52 Weeks of Baking 2015</p>
           <p className="description-text baking">
             In 2015 Ann-Marie participated in a reddit challenge where she baked
             a different dessert every week for a year. These are the posts she
             made on reddit from that year.
           </p>
-          {posts.length ? (
-            <PostInfo posts={posts} />
-          ) : (
-            <p className="sub-header">
-              Sorry, there are no posts to display right now
-            </p>
-          )}
+
+          <div className="baking-box">
+            {posts.length ? (
+              <PostInfo posts={posts} />
+            ) : (
+              <p className="sub-header">
+                Sorry, there are no posts to display right now
+              </p>
+            )}
+          </div>
         </div>
       </div>
     </Layout>
