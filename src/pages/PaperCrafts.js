@@ -10,7 +10,7 @@ const PaperCrafts = () => {
     <Layout>
       <div className="main-page-container">
         <div className="baking-page">
-          <p className="page-header">Paper Projects</p>
+          <p className="page-header">Paper and Other Materials</p>
 
           {posts.length ? (
             <PostInfo posts={posts} />

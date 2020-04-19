@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Image from "gatsby-image"
 import useCrochet from "../hooks/useCrochet"
 import "../styles/BakingWeeks.css"
-import { Link } from "gatsby"
 import PostInfo from "../components/PostInfo"
 
 const Crochet = () => {

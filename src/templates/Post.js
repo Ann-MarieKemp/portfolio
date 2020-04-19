@@ -4,6 +4,7 @@ import "../styles/Posts.css"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Image from "gatsby-image"
 import Layout from "../components/Layout"
+import Carousel from "../components/Carousel"
 
 export const query = graphql`
   query($slug: String!) {
@@ -15,6 +16,14 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
             id
+          }
+        }
+        images {
+          childImageSharp {
+            id
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
         author
@@ -32,6 +41,10 @@ const Post = ({ data: { mdx: post } }) => {
         fluid={post.frontmatter.image.childImageSharp.fluid}
       />
       <MDXRenderer>{post.body}</MDXRenderer>
+      {console.log(post.frontmatter.images)}
+      {post.frontmatter.images.length && (
+        <Carousel images={post.frontmatter.images} />
+      )}
     </Layout>
   )
 }

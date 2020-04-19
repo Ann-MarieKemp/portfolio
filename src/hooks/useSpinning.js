@@ -11,8 +11,7 @@ const useSpinning = () => {
             image {
               childImageSharp {
                 fluid {
-                  src
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

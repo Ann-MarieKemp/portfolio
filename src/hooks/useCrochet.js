@@ -11,8 +11,7 @@ const useCrochet = () => {
             image {
               childImageSharp {
                 fluid {
-                  src
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

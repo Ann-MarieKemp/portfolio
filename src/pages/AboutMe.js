@@ -3,8 +3,10 @@ import "../styles/AboutMe.css"
 import Carousel from "../components/Carousel"
 import Layout from "../components/Layout"
 import ProjectLink from "../components/ProjectLink"
+import useKittyImages from "../hooks/useKittyImages"
 
 const AboutMe = props => {
+  const kittyImages = useKittyImages()
   return (
     <Layout>
       <div className="main-page-container">
@@ -113,7 +115,7 @@ const AboutMe = props => {
               two cats Cotton and Carnival. As a reward for making it this far
               down the page here are some photos of her kitties:
             </p>
-            <Carousel />
+            <Carousel images={kittyImages} />
           </div>
         </div>
       </div>

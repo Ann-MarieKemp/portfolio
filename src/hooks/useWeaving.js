@@ -11,8 +11,7 @@ const useWeaving = () => {
             image {
               childImageSharp {
                 fluid {
-                  src
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

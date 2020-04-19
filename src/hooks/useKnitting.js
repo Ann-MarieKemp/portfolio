@@ -11,8 +11,7 @@ const useKnitting = () => {
             image {
               childImageSharp {
                 fluid {
-                  src
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

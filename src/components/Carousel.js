@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 import Arrow from "./Arrow"
 import Image from "gatsby-image"
-import kittyImages from "../hooks/useKittyImages"
 import "../styles/Carousel.css"
 
-const Carousel = props => {
-  const images = kittyImages()
+const Carousel = ({ images }) => {
   const [imageIdx, setImageIdx] = useState(0)
   let trans = imageIdx * (100 / images.length)
 

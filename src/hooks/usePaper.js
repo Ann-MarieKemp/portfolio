@@ -11,8 +11,7 @@ const usePaper = () => {
             image {
               childImageSharp {
                 fluid {
-                  src
-                  srcSet
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -21,6 +20,7 @@ const usePaper = () => {
       }
     }
   `)
+  console.log(data)
   return data.allMdx.nodes.map(post => ({
     title: post.frontmatter.title,
     author: post.frontmatter.author,
