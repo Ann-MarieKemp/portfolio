@@ -41,8 +41,8 @@ const Post = ({ data: { mdx: post } }) => {
         fluid={post.frontmatter.image.childImageSharp.fluid}
       />
       <MDXRenderer>{post.body}</MDXRenderer>
-      {console.log(post.frontmatter.images)}
-      {post.frontmatter.images.length && (
+
+      {post.frontmatter.images !== null && (
         <Carousel images={post.frontmatter.images} />
       )}
     </Layout>
