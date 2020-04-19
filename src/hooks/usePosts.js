@@ -5,7 +5,7 @@ const usePosts = () => {
     query baking {
       allMdx(
         filter: { frontmatter: { category: { eq: "baking" } } }
-        sort: { fields: children___id, order: ASC }
+        sort: { fields: fileAbsolutePath, order: ASC }
       ) {
         nodes {
           frontmatter {
