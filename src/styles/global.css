@@ -6,9 +6,10 @@
 }
 html {
   background-color: #4a7899;
+  overflow-x: hidden;
 }
 p {
-  color: #ffede1;
+  color: #fffffd;
   line-height: 1.75;
   word-wrap: break-word;
   font-family: Georgia, sans-serif;
@@ -33,10 +34,11 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 a:hover {
-  color: #ffede1;
+  color: #fffffd;
 }
 .sub-header {
   margin-top: 0.2em;
@@ -45,13 +47,13 @@ a:hover {
   color: #16425b;
 }
 .sub-header-cream {
-  color: #f1e0c5;
+  color: #fffffd;
   margin-top: 0.2em;
   font-size: 24px;
   text-align: center;
 }
 .category-link {
-  color: #ffede1;
+  color: #fffffd;
   align-self: center;
   text-decoration: none;
   font-size: 24px;
@@ -88,8 +90,10 @@ a:hover {
 .sub-header.resume {
   margin-top: 1em;
   margin-bottom: -1em;
-  color: #f1e0c5;
+  color: #fffffd;
 }
 .sub-header.resume:hover {
   color: #16425b;
+}
+.project-link-hover {
 }

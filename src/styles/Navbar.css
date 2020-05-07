@@ -4,14 +4,17 @@
   border-radius: 3px;
   height: 3.5rem;
   align-items: center;
-  justify-content: space-around;
+
+  flex-wrap: wrap;
+  width: 100vw;
 }
 .page-link {
-  margin-right: 1em;
-  color: #ffede1;
-  margin-left: 2em;
+  margin-right: 0.5em;
+  color: #fffffd;
+  margin-left: 0.5em;
   font-size: 18px;
   text-decoration: none;
+  flex-shrink: 1;
 }
 .page-link:hover {
   color: #e3d0d8;
@@ -21,8 +24,3 @@ img {
   width: 38px;
   height: 32px;
 }
-/* .link-logos-box {
-  background-color: #e3d0d8;
-  display: flex;
-  align-items: center;
-} */

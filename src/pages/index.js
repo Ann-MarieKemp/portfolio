@@ -18,10 +18,26 @@ export default () => {
             for front-end development and debugging weird issues.
           </p>
           <div className="mainpage-project-link-container">
-            <ProjectLink linkTo="/AboutMe" linkText="About Ann-Marie" />
-            <ProjectLink linkTo="/Projects" linkText="Projects" />
-            <ProjectLink linkTo="/Crafts" linkText="Crafts" />
-            <ProjectLink linkTo="/ContactInfo" linkText="Contact Info" />
+            <ProjectLink
+              className="project-link-hover"
+              linkTo="/AboutMe"
+              linkText="About Ann-Marie"
+            />
+            <ProjectLink
+              className="project-link-hover"
+              linkTo="/Projects"
+              linkText="Projects"
+            />
+            <ProjectLink
+              className="project-link-hover"
+              linkTo="/Crafts"
+              linkText="Crafts"
+            />
+            <ProjectLink
+              className="project-link-hover"
+              linkTo="/ContactInfo"
+              linkText="Contact Info"
+            />
           </div>
         </div>
       </div>

@@ -7,3 +7,8 @@
 .project-text {
   color: #16425b;
 }
+@media only screen and (max-width: 375px) {
+  .all-projects-box {
+    width: 100vw;
+  }
+}

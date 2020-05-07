@@ -13,18 +13,18 @@ const Navbar = props => {
         Projects
       </Link>
       <Link className="page-link" to="/AboutMe">
-        Bio
+        About
       </Link>
       <Link className="page-link" to="/Crafts">
         Crafts
       </Link>
       <Link className="page-link" to="/ContactInfo">
-        Contact Info
+        Contact
       </Link>
-      <Link className="page-link" to="/Resume">
+      {/* <Link className="page-link" to="/Resume">
         Resume
-      </Link>
-      <div className="link-logos-box">
+      </Link> */}
+      {/* <div className="link-logos-box">
         <a
           className="page-link"
           href="https://github.com/Ann-MarieKemp"
@@ -39,7 +39,7 @@ const Navbar = props => {
         >
           <img alt="linkedIn logo" src={linkedin}></img>
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }

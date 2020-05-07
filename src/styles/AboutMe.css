@@ -23,7 +23,7 @@
   text-align: center;
 }
 .crafts-link {
-  color: #ffede1;
+  color: #fffffd;
   align-self: center;
   text-decoration: none;
   font-size: 24px;
@@ -31,7 +31,7 @@
 .crafts-link-wrapper {
   display: flex;
   flex-direction: column;
-  border: 2px dotted #ffede1;
+  border: 2px dotted fffffd;
   padding: 0 10px 10px 10px;
   align-items: center;
 }
