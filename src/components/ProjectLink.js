@@ -9,7 +9,7 @@ const ProjectLink = props => {
   return (
     <button
       role="link"
-      tabIndex={0}
+      tabIndex={-1}
       className="link-container"
       onMouseEnter={() => {
         setHover(true)
