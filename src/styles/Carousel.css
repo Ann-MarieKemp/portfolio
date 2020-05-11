@@ -27,10 +27,12 @@
   margin-top: 525px;
 }
 .opacity-half {
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  visibility: hidden;
 }
 .opacity-full {
-  opacity: 1;
+  /* opacity: 1; */
+  visibility: visible;
   transform: scale(1);
 }
 .arrow {
