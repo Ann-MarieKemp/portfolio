@@ -38,7 +38,7 @@ p {
 }
 
 a:hover {
-  color: #fffffd;
+  color: #e3d0d8;
 }
 .sub-header {
   margin-top: 0.2em;
@@ -59,7 +59,7 @@ a:hover {
   font-size: 24px;
 }
 .category-link:hover {
-  color: #4a7899;
+  color: #e3d0d8;
 }
 .portfolio-photo {
   border-radius: 50%;
@@ -93,7 +93,7 @@ a:hover {
   color: #fffffd;
 }
 .sub-header.resume:hover {
-  color: #16425b;
+  color: #e3d0d8;
 }
 .project-link-hover {
 }
