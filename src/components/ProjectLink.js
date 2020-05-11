@@ -7,7 +7,7 @@ const ProjectLink = props => {
   const { linkTo, linkText } = props
 
   return (
-    <div
+    <button
       role="link"
       tabIndex={0}
       className="link-container"
@@ -27,7 +27,7 @@ const ProjectLink = props => {
           {linkText}
         </Link>
       )}
-    </div>
+    </button>
   )
 }
 
