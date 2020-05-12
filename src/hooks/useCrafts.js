@@ -1,17 +1,16 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-const usePaper = () => {
+const useCrafts = () => {
   const data = useStaticQuery(graphql`
-    query paper {
-      allMdx(filter: { frontmatter: { category: { eq: "paper" } } }) {
+    query crafts {
+      allMdx(filter: { frontmatter: { id: { eq: 1 } } }) {
         nodes {
           frontmatter {
-            title
-            slug
             image {
               childImageSharp {
                 fluid {
-                  ...GatsbyImageSharpFluid
+                  src
+                  srcSet
                 }
               }
             }
@@ -20,13 +19,9 @@ const usePaper = () => {
       }
     }
   `)
-
   return data.allMdx.nodes.map(post => ({
-    title: post.frontmatter.title,
-    author: post.frontmatter.author,
-    slug: post.frontmatter.slug,
-    excerpt: post.excerpt,
     image: post.frontmatter.image.childImageSharp.fluid,
   }))
 }
-export default usePaper
+
+export default useCrafts

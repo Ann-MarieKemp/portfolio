@@ -15,7 +15,7 @@ const useKittyImages = () => {
       }
     }
   `)
-  console.log(data.Images.nodes)
+
   return data.Images.nodes
 }
 
