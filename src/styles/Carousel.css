@@ -11,7 +11,6 @@
 .gatsby-image-wrapper {
   width: 450px;
   height: 450px;
-  margin: 0 auto;
   transition: opacity 300ms linear,
     transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transform: scale(0.7);
