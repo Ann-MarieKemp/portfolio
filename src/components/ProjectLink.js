@@ -9,7 +9,7 @@ const ProjectLink = props => {
   return (
     <button
       tabIndex={-1}
-      className="link-container"
+      className="link-container fade-in"
       onMouseEnter={() => {
         setHover(true)
       }}
