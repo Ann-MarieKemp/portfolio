@@ -30,12 +30,14 @@ export const query = graphql`
         author
         title
         category
+        rotate
       }
       body
     }
   }
 `
 const Post = ({ data: { mdx: post } }) => {
+  let imageClass = "post-image"
   let newCategory = post.frontmatter.category
   let display = post.frontmatter.category
   if (post.frontmatter.category === "baking") {
@@ -57,10 +59,13 @@ const Post = ({ data: { mdx: post } }) => {
     newCategory = "Knitting"
     display = "All Knitting"
   }
+  if (post.frontmatter.rotate && post.frontmatter.rotate === true) {
+    imageClass = "post-image-rotate"
+  }
   return (
     <Layout>
       <Image
-        className="post-image"
+        className={imageClass}
         fluid={post.frontmatter.image.childImageSharp.fluid}
       />
       <MDXRenderer>{post.body}</MDXRenderer>
