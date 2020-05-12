@@ -24,37 +24,33 @@ const ContactInfo = props => {
           method="post"
           action="https://formspree.io/aedalenb@gmail.com"
         >
-          <label className="form-label">
-            Name
-            <input className="form-input" type="text" name="name" id="name" />
-          </label>
-          <label className="form-label">
-            Email
-            <input
-              className="form-input"
-              type="email"
-              name="_replyto"
-              id="email"
-            />
-          </label>
-          <label className="form-label subject">
-            Subject
-            <input
-              className="form-input"
-              type="text"
-              name="subject"
-              id="subject"
-            />
-          </label>
-          <label className="form-label message">
-            Message
-            <textarea
-              className="form-input"
-              name="message"
-              id="message"
-              rows="5"
-            />
-          </label>
+          <label className="form-label">Name:</label>
+
+          <input className="form-input" type="text" name="name" id="name" />
+          <label className="form-label">Email: </label>
+          <input
+            className="form-input"
+            type="email"
+            name="_replyto"
+            id="email"
+          />
+
+          <label className="form-label subject">Subject </label>
+          <input
+            className="form-input"
+            type="text"
+            name="subject"
+            id="subject"
+          />
+
+          <label className="form-label message">Message </label>
+          <textarea
+            className="form-input"
+            name="message"
+            id="message"
+            rows="5"
+          />
+
           <button type="submit">Send</button>
           <input className="clear" type="reset" value="Clear" />
           <input type="text" name="_gotcha" style={{ display: "none" }} />

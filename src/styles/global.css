@@ -81,8 +81,11 @@ a:hover {
 }
 .form-container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
+  justify-content: space-between;
+
+  width: 50vw;
 }
 .page-header.crafts {
   margin-top: 3em;
