@@ -27,7 +27,7 @@ const ContactInfo = props => {
           <label className="form-label">Name:</label>
 
           <input className="form-input" type="text" name="name" id="name" />
-          <label className="form-label">Email: </label>
+          <label className="form-label">Email:</label>
           <input
             className="form-input"
             type="email"
@@ -35,7 +35,7 @@ const ContactInfo = props => {
             id="email"
           />
 
-          <label className="form-label subject">Subject </label>
+          <label className="form-label subject">Subject:</label>
           <input
             className="form-input"
             type="text"
@@ -43,7 +43,7 @@ const ContactInfo = props => {
             id="subject"
           />
 
-          <label className="form-label message">Message </label>
+          <label className="form-label message">Message:</label>
           <textarea
             className="form-input"
             name="message"

@@ -41,3 +41,6 @@ button {
 .contact-email:hover {
   color: #16425b;
 }
+label {
+  margin-top: 0.2em;
+}
