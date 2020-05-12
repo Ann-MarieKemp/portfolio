@@ -1,6 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
 import "../styles/ContactInfo.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons"
+import resumeFile from "../constants/Ann-MarieKemp_Resume.pdf"
 
 const ContactInfo = props => {
   return (
@@ -8,16 +12,27 @@ const ContactInfo = props => {
       <div className="main-page-container">
         <p className="page-header">Contact Ann-Marie</p>
         <div className="contact-link-container">
-          <p className="contact-email">aedalenb@gmail.com</p>
-          <a className="contact-email" href="https://github.com/Ann-MarieKemp">
-            Github
-          </a>
-          <a
-            className="contact-email"
-            href="https://www.linkedin.com/in/ann-mariekemp"
-          >
-            LinkedIn
-          </a>
+          <div className="icons-box">
+            <p className="contact-email">aedalenb@gmail.com</p>
+            <a
+              className="page-link"
+              href="https://github.com/Ann-MarieKemp"
+              target="_blank"
+            >
+              <FontAwesomeIcon className="site-icons" icon={faGithub} />
+            </a>
+
+            <a
+              className="page-link"
+              href="https://www.linkedin.com/in/ann-mariekemp/"
+              target="_blank"
+            >
+              <FontAwesomeIcon className="site-icons" icon={faLinkedin} />
+            </a>
+            <a target="_blank" href={resumeFile} rel="noopener noreferrer">
+              <FontAwesomeIcon className="site-icons" icon={faFileDownload} />
+            </a>
+          </div>
         </div>
         <form
           className="form-container"
@@ -51,8 +66,14 @@ const ContactInfo = props => {
             rows="5"
           />
 
-          <button type="submit">Send</button>
-          <input className="clear" type="reset" value="Clear" />
+          <button className="link-container fade-in" type="submit">
+            Send
+          </button>
+          <input
+            className="clear link-container fade-in"
+            type="reset"
+            value="Clear"
+          />
           <input type="text" name="_gotcha" style={{ display: "none" }} />
         </form>
 

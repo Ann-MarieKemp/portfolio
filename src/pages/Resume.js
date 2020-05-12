@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <Layout>
       <div className="main-page-container">
-        <a className="sub-header resume" href={resumeFile} download>
+        <a className="sub-header resume" target="_blank" href={resumeFile}>
           Download PDF version of Ann-Marie's Resume
         </a>
         <Image className="resume" fluid={resumePhoto} />

@@ -4,6 +4,7 @@ import "../styles/Navbar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons"
+import resumeFile from "../constants/Ann-MarieKemp_Resume.pdf"
 
 const Navbar = props => {
   return (
@@ -26,29 +27,25 @@ const Navbar = props => {
         </Link>
       </div>
       <div className="icons-box">
-        <FontAwesomeIcon className="site-icons" icon={faGithub} />
-        <FontAwesomeIcon className="site-icons" icon={faLinkedin} />
-        <FontAwesomeIcon className="site-icons" icon={faFileDownload} />
-      </div>
-      {/* <Link className="page-link" to="/Resume">
-        Resume
-      </Link> */}
-      {/* <div className="link-logos-box">
         <a
           className="page-link"
           href="https://github.com/Ann-MarieKemp"
           target="_blank"
         >
-          <img alt="github-mark" src={github}></img>
+          <FontAwesomeIcon className="site-icons" icon={faGithub} />
         </a>
+
         <a
           className="page-link"
           href="https://www.linkedin.com/in/ann-mariekemp/"
           target="_blank"
         >
-          <img alt="linkedIn logo" src={linkedin}></img>
+          <FontAwesomeIcon className="site-icons" icon={faLinkedin} />
         </a>
-      </div> */}
+        <a target="_blank" href={resumeFile} rel="noopener noreferrer">
+          <FontAwesomeIcon className="site-icons" icon={faFileDownload} />
+        </a>
+      </div>
     </nav>
   )
 }

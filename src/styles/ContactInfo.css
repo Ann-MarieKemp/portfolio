@@ -29,7 +29,7 @@ button {
 }
 
 .contact-email {
-  font-size: 24px;
+  font-size: 20px;
   color: #fffffd;
 }
 .contact-link-container {
@@ -39,8 +39,11 @@ button {
   width: 75vw;
 }
 .contact-email:hover {
-  color: #16425b;
+  color: #e3d0d8;
 }
 label {
   margin-top: 0.2em;
+}
+.form-input {
+  font-size: 16px;
 }
