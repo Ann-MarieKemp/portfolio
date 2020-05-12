@@ -22,6 +22,7 @@ const Carousel = ({ images }) => {
               key={image.childImageSharp.id}
               fluid={image.childImageSharp.fluid}
               imgStyle={{ objectFit: "contain" }}
+              alt="Picture of adorable Kitty Cat"
             />
           )
         })}
