@@ -62,7 +62,7 @@ a:hover {
   color: #fffffd;
   align-self: center;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 .category-link:hover {
   color: #e3d0d8;
@@ -104,4 +104,3 @@ a:hover {
 .sub-header.resume:hover {
   color: #e3d0d8;
 }
-

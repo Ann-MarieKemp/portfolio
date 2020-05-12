@@ -6,7 +6,6 @@ import "../styles/Carousel.css"
 const Carousel = ({ images }) => {
   const [imageIdx, setImageIdx] = useState(0)
   let trans = imageIdx * (100 / images.length)
-
   return (
     <div className="slider">
       <div
