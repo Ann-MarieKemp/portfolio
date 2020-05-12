@@ -8,7 +8,6 @@ const ProjectLink = props => {
 
   return (
     <button
-      role="link"
       tabIndex={-1}
       className="link-container"
       onMouseEnter={() => {

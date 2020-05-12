@@ -5,7 +5,7 @@ import github from "../../static/GitHub-Mark-32px.png"
 import linkedin from "../../static/LI-In-Bug.png"
 const Navbar = props => {
   return (
-    <nav id="nav-bar-container">
+    <nav role="navigation" id="nav-bar-container">
       <Link className="page-link" to="/">
         Home
       </Link>

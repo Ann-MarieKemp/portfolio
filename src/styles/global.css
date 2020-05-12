@@ -8,6 +8,12 @@ html {
   background-color: #4a7899;
   overflow-x: hidden;
 }
+h1 {
+  color: #fffffd;
+  word-wrap: break-word;
+  font-family: Georgia, sans-serif;
+  font-weight: normal;
+}
 p {
   color: #fffffd;
   line-height: 1.75;

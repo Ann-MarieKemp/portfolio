@@ -11,7 +11,7 @@ export default () => {
     <Layout>
       <div className="main-page-container">
         <Image className="portfolio-photo" fluid={portfolioPhoto} />
-        <p className="main-page-header ">Ann-Marie Kemp</p>
+        <h1 className="main-page-header ">Ann-Marie Kemp</h1>
         <div className="about-me-tag index">
           <p>
             Full Stack Software Engineer based in New York City with a passion
