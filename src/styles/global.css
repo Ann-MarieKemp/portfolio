@@ -104,3 +104,12 @@ a:hover {
 .sub-header.resume:hover {
   color: #e3d0d8;
 }
+.craft-category-image.gatsby-image-wrapper {
+  margin: 0 auto;
+  border: 2px solid pink;
+  width: 300px;
+  height: 300px;
+}
+.craft-link {
+  margin: 0;
+}

@@ -12,8 +12,10 @@ const Crafts = () => {
       <div className="main-page-container">
         <p className="page-header crafts">Craft Projects</p>
         <div className="mainpage-project-link-container">
-          <Image></Image>
-          <ProjectLink linkTo="/PaperCrafts" linkText="Paper/Other" />
+          <div>
+            <Image fluid={images[0].image} className="craft-category-image" />
+            <ProjectLink linkTo="/PaperCrafts" linkText="Paper/Other" />
+          </div>
           <ProjectLink linkTo="/BakingWeeks" linkText="52 Weeks of Baking" />
           <ProjectLink linkTo="/Knitting" linkText="Knitting" />
           <ProjectLink linkTo="/Crochet" linkText="Crochet" />
