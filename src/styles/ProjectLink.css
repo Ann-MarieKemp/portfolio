@@ -1,7 +1,7 @@
 .link-container {
-  width: 200px;
+  width: 250px;
   background-color: #16425b;
-  height: 100px;
+  height: 30px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -10,4 +10,8 @@
   align-content: center;
   margin-top: 1.5em;
   padding: 0 10px;
+  flex-wrap: wrap;
+}
+.link-container:hover {
+  box-shadow: -1px 1px 3px 1px #e3d0d8;
 }
