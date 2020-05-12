@@ -6,6 +6,7 @@ const useWeaving = () => {
       allMdx(filter: { frontmatter: { category: { eq: "weaving" } } }) {
         nodes {
           frontmatter {
+            rotate
             title
             slug
             image {

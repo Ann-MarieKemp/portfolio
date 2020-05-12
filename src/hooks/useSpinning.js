@@ -6,6 +6,7 @@ const useSpinning = () => {
       allMdx(filter: { frontmatter: { category: { eq: "spinning" } } }) {
         nodes {
           frontmatter {
+            rotate
             title
             slug
             image {

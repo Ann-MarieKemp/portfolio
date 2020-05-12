@@ -6,6 +6,7 @@ const useCrochet = () => {
       allMdx(filter: { frontmatter: { category: { eq: "crochet" } } }) {
         nodes {
           frontmatter {
+            rotate
             title
             slug
             image {

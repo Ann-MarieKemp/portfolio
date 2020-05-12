@@ -35,7 +35,7 @@ const Crafts = () => {
             />
             <Image
               alt="wedding table sign"
-              fluid={images[3].image}
+              fluid={images[2].image}
               className="craft-category-image"
             />
           </div>
@@ -48,7 +48,7 @@ const Crafts = () => {
             />
             <Image
               alt="wedding table sign"
-              fluid={images[4].image}
+              fluid={images[3].image}
               className="craft-category-image"
             />
           </div>
@@ -60,7 +60,7 @@ const Crafts = () => {
             />
             <Image
               alt="wedding table sign"
-              fluid={images[5].image}
+              fluid={images[4].image}
               className="craft-category-image"
             />
           </div>
@@ -83,8 +83,8 @@ const Crafts = () => {
               linkText="Weaving"
             />
             <Image
-              alt="spinning wheel bobbin"
-              fluid={images[2].image}
+              alt="woven blanket"
+              fluid={images[5].image}
               className="craft-category-image rotate"
             />
           </div>

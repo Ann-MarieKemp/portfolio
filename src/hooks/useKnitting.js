@@ -6,6 +6,7 @@ const useKnitting = () => {
       allMdx(filter: { frontmatter: { category: { eq: "knitting" } } }) {
         nodes {
           frontmatter {
+            rotate
             title
             slug
             image {

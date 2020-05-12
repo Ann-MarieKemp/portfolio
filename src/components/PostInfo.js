@@ -7,10 +7,14 @@ const PostInfo = ({ posts }) => {
   return (
     <>
       {posts.map(post => {
+        let imageClass = "post-preview-image"
+        if (post.rotate && post.rotate === true) {
+          imageClass = "post-preview-image rotate"
+        }
         return (
           <div className="weeks-of-baking-container">
             <div className="post-preview-container" key={post.title}>
-              <Image className="post-preview-image" fluid={post.image} />
+              <Image className={imageClass} fluid={post.image} />
               <Link className="category-link" to={`/${post.slug}`}>
                 {post.title}
               </Link>
