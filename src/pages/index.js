@@ -15,7 +15,7 @@ export default () => {
         <div className="about-me-tag index">
           <p>
             Full Stack Software Engineer based in New York City with a passion
-            for front-end development and debugging weird issues.
+            for debugging weird issues.
           </p>
           <div className="mainpage-project-link-container">
             <ProjectLink
