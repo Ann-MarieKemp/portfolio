@@ -2,7 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import "../styles/Navbar.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons"
 import { faFileDownload } from "@fortawesome/free-solid-svg-icons"
 import resumeFile from "../constants/Ann-MarieKemp_Resume.pdf"
 
@@ -27,6 +31,13 @@ const Navbar = props => {
         </Link>
       </div>
       <div className="icons-box">
+        <a
+          target="_blank"
+          href="https://medium.com/@amkemp"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon className="site-icons" icon={faMedium} />
+        </a>
         <a
           className="page-link"
           href="https://github.com/Ann-MarieKemp"
