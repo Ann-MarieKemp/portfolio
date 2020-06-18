@@ -62,6 +62,8 @@ const AboutMe = props => {
                 <br /> Git
                 <br />
                 Github
+                <br />
+                Go
               </p>
             </div>
             <div className="skills-wrapper">

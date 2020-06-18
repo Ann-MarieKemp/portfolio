@@ -8,11 +8,21 @@ const SingleProject = ({ video, ...props }) => {
       <p className="sub-header">{props.projectName}</p>
       <div className="project-link-container">
         {props.github ? (
-          <a className="project-github" href={props.github}>
+          <a
+            className="project-github"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.github}
+          >
             Github
           </a>
         ) : null}
-        <a className="project-github" href={props.deployLink}>
+        <a
+          className="project-github"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={props.deployLink}
+        >
           {props.linkText}
         </a>
       </div>

@@ -42,6 +42,7 @@ const Navbar = props => {
           className="page-link"
           href="https://github.com/Ann-MarieKemp"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon className="site-icons" icon={faGithub} />
         </a>
@@ -50,6 +51,7 @@ const Navbar = props => {
           className="page-link"
           href="https://www.linkedin.com/in/ann-mariekemp/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <FontAwesomeIcon className="site-icons" icon={faLinkedin} />
         </a>
