@@ -64,20 +64,22 @@ const Post = ({ data: { mdx: post } }) => {
   }
   return (
     <Layout>
-      <Image
-        className={imageClass}
-        fluid={post.frontmatter.image.childImageSharp.fluid}
-      />
-      <MDXRenderer>{post.body}</MDXRenderer>
+      <div className="main-page-container">
+        <Image
+          className={imageClass}
+          fluid={post.frontmatter.image.childImageSharp.fluid}
+        />
+        <MDXRenderer>{post.body}</MDXRenderer>
 
-      {post.frontmatter.images !== null && (
-        <Carousel images={post.frontmatter.images} />
-      )}
-      <ProjectLink
-        className="category-link"
-        linkTo={`/${newCategory}`}
-        linkText={`Back to ${display}`}
-      />
+        {post.frontmatter.images !== null && (
+          <Carousel images={post.frontmatter.images} />
+        )}
+        <ProjectLink
+          className="category-link"
+          linkTo={`/${newCategory}`}
+          linkText={`Back to ${display}`}
+        />
+      </div>
     </Layout>
   )
 }
