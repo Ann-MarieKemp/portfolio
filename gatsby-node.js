@@ -11,7 +11,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
   if (res.errors) {
-    reporter.panic("failed to creat posts", res.errors)
+    reporter.panic("failed to create posts", JSON.stringify(res.errors))
   }
   const posts = res.data.allMdx.nodes
   posts.forEach(post => {
