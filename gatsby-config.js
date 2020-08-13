@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 const YoutubeKey = require("./secrets.js")
+require("dotenv").config()
 
 const path = require(`path`)
 module.exports = {
@@ -65,6 +66,13 @@ module.exports = {
         channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
         apiKey: YoutubeKey,
         maxVideos: 50, // Defaults to 50
+      },
+    },
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "zrjvrnvx1s2i",
+        accessToken: process.env.AMKEMP_API_TOKEN,
       },
     },
   ],
