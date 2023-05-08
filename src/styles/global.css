@@ -5,23 +5,23 @@
   box-sizing: border-box;
 }
 html {
-  background-color: #4a7899;
+  background-color: #EFEFEF;
   overflow-x: hidden;
 }
 h1 {
-  color: #fffffd;
+  color: #A9A9A9;
   word-wrap: break-word;
   font-family: Georgia, sans-serif;
   font-weight: normal;
 }
 p {
-  color: #fffffd;
+  color: #A9A9A9;
   line-height: 1.75;
   word-wrap: break-word;
   font-family: Georgia, sans-serif;
 }
 .page-header {
-  margin-top: 0.2em;
+  /* margin-top: 0.2em; */
   font-size: 50px;
   text-align: center;
 }
@@ -44,38 +44,38 @@ p {
 }
 
 a:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }
 .sub-header {
   margin-top: 0.2em;
   font-size: 24px;
   text-align: center;
-  color: #16425b;
+  color: #A9A9A9;
 }
 .sub-header-cream {
-  color: #fffffd;
+  color: #A9A9A9;
   margin-top: 0.2em;
   font-size: 24px;
   text-align: center;
 }
 .category-link {
-  color: #fffffd;
+  color: #A9A9A9;
   align-self: center;
   text-decoration: none;
   font-size: 20px;
 }
 .category-link:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }
 .portfolio-photo {
   border-radius: 50%;
-  box-shadow: 3px 1px 8px black;
+  box-shadow: 3px 1px 8px #A9A9A9;
 }
-.portfolio-photo.gatsby-image-wrapper {
+.portfolio-photo.gatsby-image-wrapper.main-photo {
   margin-top: -2.5em;
 }
 .main-page-header {
-  margin-top: -1.2em;
+  margin-top: 2.5em;
   font-size: 50px;
   text-align: center;
 }
@@ -99,10 +99,10 @@ a:hover {
 .sub-header.resume {
   margin-top: 1em;
   margin-bottom: -1em;
-  color: #fffffd;
+  color: #A9A9A9;
 }
 .sub-header.resume:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }
 .craft-category-image.gatsby-image-wrapper.rotate {
   -webkit-transform: rotate(-90deg);

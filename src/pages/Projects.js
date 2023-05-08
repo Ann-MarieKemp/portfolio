@@ -9,10 +9,10 @@ import {
   rateYourRepDescription,
   twelveStepsDescription,
 } from "../constants/projectvariables"
-import useVideos from "../hooks/useVideos"
+// import useVideos from "../hooks/useVideos"
 
 const Projects = props => {
-  const videos = useVideos()
+  // const videos = useVideos()
   return (
     <Layout>
       <p className="page-header">Projects </p>
@@ -34,13 +34,13 @@ const Projects = props => {
           description={dotEaterDescription}
           linkText="Play The Game!"
           deployLink="http://dot-eater.herokuapp.com/"
-          video={videos[0]}
+          // video={videos[0]}
         />
         <SingleProject
           projectName={"Recipix"}
           github="https://github.com/Ann-MarieKemp/Recipix"
           description={recipixDescription}
-          video={videos[1]}
+          // video={videos[1]}
         />
         <SingleProject
           projectName={"Violet Vines"}

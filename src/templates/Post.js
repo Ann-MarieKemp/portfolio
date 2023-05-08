@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import "../styles/Posts.css"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import Carousel from "../components/Carousel"
 import ProjectLink from "../components/ProjectLink"
@@ -65,9 +65,9 @@ const Post = ({ data: { mdx: post } }) => {
   return (
     <Layout>
       <div className="main-page-container">
-        <Image
+        <GatsbyImage
           className={imageClass}
-          fluid={post.frontmatter.image.childImageSharp.fluid}
+          image={post.frontmatter.image.childImageSharp.fluid}
         />
         <MDXRenderer>{post.body}</MDXRenderer>
 

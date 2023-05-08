@@ -1,7 +1,7 @@
 .post-preview-container {
   display: flex;
   padding: 0 10px;
-  background-color: #16425b;
+  /* background-color: #16425b; */
   border-radius: 2px;
   box-shadow: 2px 2px black;
   width: 23em;

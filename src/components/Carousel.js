@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Arrow from "./Arrow"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import "../styles/Carousel.css"
 
 const Carousel = ({ images }) => {
@@ -16,10 +16,10 @@ const Carousel = ({ images }) => {
       >
         {images.map((image, index) => {
           return (
-            <Image
+            <GatsbyImage
               className={imageIdx === index ? "opacity-full" : "opacity-half"}
               key={image.childImageSharp.id}
-              fluid={image.childImageSharp.fluid}
+              image={image.childImageSharp.fluid}
               imgStyle={{ objectFit: "contain" }}
               alt="Picture of adorable Kitty Cat"
             />

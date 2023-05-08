@@ -4,7 +4,7 @@
   height: 600px;
 }
 .post-text {
-  color: #fffffd;
+  color: #A9A9A9;
   width: 80vw;
   font-size: 20px;
 }
@@ -13,5 +13,5 @@
   margin: 1em auto;
 }
 .category-link.baking:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }

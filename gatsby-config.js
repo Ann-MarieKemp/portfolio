@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const YoutubeKey = require("./secrets.js")
+// const YoutubeKey = require("./secrets.js")
 
 const path = require(`path`)
 module.exports = {
@@ -38,12 +38,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `audiolindygirl`,
-      },
-    },
+    `gatsby-plugin-image`,
     {
       resolve: "gatsby-source-imgur-gallery-albums",
       options: {
@@ -59,13 +54,13 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-youtube-v2`,
-      options: {
-        channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
-        apiKey: YoutubeKey,
-        maxVideos: 50, // Defaults to 50
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-youtube-v2`,
+    //   options: {
+    //     channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
+    //     apiKey: AIzaSyA3ZygYjiv0RTn7hkq5KfI0a_YBw3W60rc,
+    //     maxVideos: 50, // Defaults to 50
+    //   },
+    // },
   ],
 }

@@ -27,12 +27,12 @@ const SingleProject = ({ video, ...props }) => {
         </a>
       </div>
       <p className="project-github">{props.description}</p>
-      {video && (
+      {/* {video && (
         <Video
           videoSrcURL={`https://www.youtube.com/embed/${video.videoId}`}
           videoTitle={video.title}
         />
-      )}
+      )} */}
     </div>
   )
 }

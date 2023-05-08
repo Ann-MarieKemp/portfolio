@@ -2,7 +2,7 @@ import React from "react"
 import ProjectLink from "../components/ProjectLink"
 import Layout from "../components/Layout"
 import useCrafts from "../hooks/useCrafts"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Crafts = () => {
   const images = useCrafts()
@@ -21,9 +21,9 @@ const Crafts = () => {
               linkTo="/PaperCrafts"
               linkText="Paper/Other"
             />
-            <Image
+            <GatsbyImage
               alt="wedding table sign"
-              fluid={images[0].image}
+              image={images[0].image}
               className="craft-category-image"
             />
           </div>
@@ -33,9 +33,9 @@ const Crafts = () => {
               linkTo="/BakingWeeks"
               linkText="52 Weeks of Baking"
             />
-            <Image
+            <GatsbyImage
               alt="wedding table sign"
-              fluid={images[2].image}
+              image={images[2].image}
               className="craft-category-image"
             />
           </div>
@@ -46,9 +46,9 @@ const Crafts = () => {
               linkTo="/Knitting"
               linkText="Knitting"
             />
-            <Image
+            <GatsbyImage
               alt="wedding table sign"
-              fluid={images[3].image}
+              image={images[3].image}
               className="craft-category-image"
             />
           </div>
@@ -58,9 +58,9 @@ const Crafts = () => {
               linkTo="/Crochet"
               linkText="Crochet"
             />
-            <Image
+            <GatsbyImage
               alt="wedding table sign"
-              fluid={images[4].image}
+              image={images[4].image}
               className="craft-category-image"
             />
           </div>
@@ -70,9 +70,9 @@ const Crafts = () => {
               linkTo="/Spinning"
               linkText="Spinning"
             />
-            <Image
+            <GatsbyImage
               alt="spinning wheel bobbin"
-              fluid={images[1].image}
+              image={images[1].image}
               className="craft-category-image"
             />
           </div>
@@ -82,9 +82,9 @@ const Crafts = () => {
               linkTo="/Weaving"
               linkText="Weaving"
             />
-            <Image
+            <GatsbyImage
               alt="woven blanket"
-              fluid={images[5].image}
+              image={images[0].image}
               className="craft-category-image rotate"
             />
           </div>

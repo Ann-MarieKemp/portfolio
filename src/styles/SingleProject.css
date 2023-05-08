@@ -1,6 +1,6 @@
 .single-project-box {
   display: flex;
-  border: 1px solid #16425b;
+  /* border: 1px solid #16425b; */
   box-shadow: 3px;
   background-color: #f1e0c5;
   margin-top: 2em;
@@ -19,14 +19,14 @@
   }
 }
 .project-github {
-  color: #16425b;
+  /* color: #16425b; */
 }
 .video {
   display: flex;
 }
 
 .project-github:visited {
-  color: #16425b;
+  /* color: #16425b; */
 }
 .project-link-container {
   display: flex;

@@ -3,41 +3,36 @@ import "../styles/AboutMe.css"
 import ProjectLink from "../components/ProjectLink"
 import Layout from "../components/Layout"
 import usePortfolioPhoto from "../hooks/usePortfolioPhoto"
-import Image from "gatsby-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 
 export default () => {
   const portfolioPhoto = usePortfolioPhoto()
+  console.log(portfolioPhoto)
   return (
     <Layout>
-      <div className="main-page-container">
-        <Image className="portfolio-photo" fluid={portfolioPhoto} />
-        <h1 className="main-page-header ">Ann-Marie Kemp</h1>
+      <div className="main-page-container" >
+        <h1 className="main-page-header ">Hello, my name is Ann-Marie Kemp</h1>
         <div className="about-me-tag index">
           <p>
-            Full Stack Software Engineer based in New York City with a passion
-            for debugging weird issues.
+            I am a <span className="fade-in">Full Stack Software Developer</span> who enjoys <span className="fade-in">troubleshooting</span>, <span className="fade-in">testing</span> and <span className="fade-in">documentation</span>.
           </p>
           <div className="mainpage-project-link-container">
             <ProjectLink
-              className="project-link-hover"
               linkTo="/AboutMe"
               linkText="About Ann-Marie"
             />
             <ProjectLink
-              className="project-link-hover"
               linkTo="/Projects"
               linkText="Projects"
             />
             <ProjectLink
-              className="project-link-hover"
               linkTo="/Crafts"
               linkText="Crafts"
             />
-            <ProjectLink
-              className="project-link-hover"
+            {/* <ProjectLink
               linkTo="/ContactInfo"
               linkText="Contact Info"
-            />
+            /> */}
           </div>
         </div>
       </div>

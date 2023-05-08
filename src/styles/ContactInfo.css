@@ -1,5 +1,5 @@
 .form-label {
-  color: #fffffd;
+  color: #A9A9A9;
   font-size: 24px;
   width: 300px;
 }
@@ -8,8 +8,8 @@ form {
   margin-top: 1em;
 }
 button {
-  color: #fffffd;
-  background-color: #16425b;
+  color: #A9A9A9;
+  /* background-color: #16425b; */
   height: 50px;
   width: 200px;
   font-size: 28px;
@@ -18,8 +18,8 @@ button {
   margin: 10px auto;
 }
 .clear {
-  color: #fffffd;
-  background-color: #16425b;
+  color: #A9A9A9;
+  /* background-color: #16425b; */
   height: 50px;
   width: 200px;
   font-size: 28px;
@@ -30,7 +30,7 @@ button {
 
 .contact-email {
   font-size: 20px;
-  color: #fffffd;
+  color: #A9A9A9;
 }
 .contact-link-container {
   display: flex;
@@ -39,7 +39,7 @@ button {
   width: 75vw;
 }
 .contact-email:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }
 label {
   margin-top: 0.2em;
