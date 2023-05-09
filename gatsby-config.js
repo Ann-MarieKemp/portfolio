@@ -54,13 +54,5 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-source-youtube-v2`,
-    //   options: {
-    //     channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
-    //     apiKey: AIzaSyA3ZygYjiv0RTn7hkq5KfI0a_YBw3W60rc,
-    //     maxVideos: 50, // Defaults to 50
-    //   },
-    // },
   ],
 }
