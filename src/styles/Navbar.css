@@ -55,6 +55,9 @@ img {
 span {
   color: #FF3B3F;
 }
+.name-spacing {
+  margin-left: 10px;
+}
 /* span {
   animation: textgrowth 1s ;
 } */

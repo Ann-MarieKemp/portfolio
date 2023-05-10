@@ -16,7 +16,7 @@ const Navbar = props => {
     <nav role="navigation" id="nav-bar-container">
       <div className="nav-title-container">
         <StaticImage src="../images/mainPortfolioImage.JPG" className="portfolio-photo small" />
-        <p>Ann-Marie Kemp</p>
+        <p className="name-spacing">Ann-Marie Kemp</p>
       </div>
       <div className='links-and-icons-container'>
         <div>

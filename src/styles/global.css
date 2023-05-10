@@ -49,14 +49,15 @@ a:hover {
 .sub-header {
   margin-top: 0.2em;
   font-size: 24px;
-  text-align: center;
   color: #A9A9A9;
 }
-.sub-header-cream {
-  color: #A9A9A9;
-  margin-top: 0.2em;
-  font-size: 24px;
-  text-align: center;
+.sub-header-red {
+  color: #FF3B3F;
+  font-size: 16px;
+}
+.sub-header-red-large {
+  color: #FF3B3F;
+  font-size: 20px;
 }
 .category-link {
   color: #A9A9A9;

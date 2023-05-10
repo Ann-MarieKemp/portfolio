@@ -26,35 +26,13 @@ const AboutMe = props => {
           </p>
           <br />
           <p>
-            She began her time at <span>IBM</span> contributing to <span>backend</span> services supporting the company intranet's notifications and settings services working in <span>Typescript</span> and leveraging technologies such as <span>GraphQL</span>, <span>Kafka</span> and <span>Cassandra</span>. She became the core maintainer and SME of a <span>RESTful</span> service using <span>Express</span> and <span>Cassandra</span> storing the setting preferences of hundreds of thousands of IBMers. She helped to build and became a core mainter of a <span>GraphQL</span> layer integrating more than 20 <span>RESTful</span> and <span>gRPC</span> microservices to service a universal UI experience. As her work with the <span>GraphQL</span> layer gave her more visibility into the work being done on the UI she began to contribute to the <span>frontend</span> work being done in <span>VueJS</span> rebuilding the auth flow of the site to account for edge cases in the logic. She continued to contribute features to the frontend UI rounding out her skills and causing her to work truly <span>full stack</span>. She spent some time on the release team for the UI coordinating the contributions of four teams to a single repo to improve the release process. She architected a feature to implement offline access of enterprise directory information for the company from an internal <span>Swift</span> application. She is currently serving as the <span>technical lead</span> on a team of developers working to rebuild an internal mobile application in <span>React Native</span> working with build processes using <span>Travis</span> and <span>Jenkins</span>.
+            She began her time at <span>IBM</span> contributing to <span>backend</span> services supporting the company intranet's notifications and settings services working in <span>Typescript</span> and leveraging technologies such as <span>GraphQL</span>, <span>Kafka</span> and <span>Cassandra</span>. She became the core maintainer and SME of a <span>RESTful</span> service using <span>Express</span> and <span>Cassandra</span> storing the setting preferences of hundreds of thousands of IBMers. She helped to build and became a core mainter of a <span>GraphQL</span> layer integrating more than 20 <span>RESTful</span> and <span>gRPC</span> microservices to service a universal UI experience. As her work with the <span>GraphQL</span> layer gave her more visibility into the work being done on the UI she began to contribute to the <span>frontend</span> work being done in <span>VueJS</span> rebuilding the auth flow of the site to account for edge cases in the logic. She continued to contribute features to the frontend UI rounding out her skills and causing her to work truly <span>full stack</span>. She spent some time on the release team for the UI coordinating the contributions of four teams to a single repo to improve the release process. She architected a feature to implement offline access of enterprise directory information for the company from an internal Swift application. She is currently serving as the <span>technical lead</span> on a team of developers working to rebuild an internal mobile application in <span>React Native</span> working with build processes using <span>Travis</span> and <span>Jenkins</span>.
           </p>
           <br />
           <div className="skills-container">
-            <div className="skills-wrapper">
-              <p className="sub-header-cream">Technical Skills</p>
-              <br />
-              <p className="skills-list">
-                JavaScript
-                <br /> Node
-                <br /> React
-                <br /> Redux <br />
-                HTML
-                <br /> CSS <br /> React Native
-                <br /> Git
-                <br />
-                Sequelize <br /> Express
-                <br />
-                Mocha
-                <br /> Firebase
-                <br /> PostgreSQL
-                <br /> Git
-                <br />
-                Github
-                <br />
-                Go
-              </p>
-            </div>
-            <p className="sub-header-cream">Audio Technical Skills:
+              <p className="sub-header-red">Technical Skills: <br/> Typescript, JavaScript, Node, React, Redux, HTML, CSS, VueJS, React Native, Git, Sequelize, Express, PostgreSQL, Github, Cassandra, GraphQL, Kafka, Travis, Jenkins, gRPC </p>
+              <br/>
+            <p className="sub-header-red">Audio Technical Skills:
             <br/>
               Consoles: Calrec Sigma, DiGiCo SD9/10/11, SSL C100, Studer Vista 5, Cadac J-Type, Yamaha CL Series
             <br/>
@@ -69,7 +47,7 @@ const AboutMe = props => {
 
             <p>
               When she's not coding or working obsessively she
-              spends her time as a maker of all things. She loves to be
+              spends her time as a maker of things. She loves to be
               productive with her time and she inherited a love of baking and
               fiber arts from her mother and grandmother. This means she spends
               her free time using her spinning wheel, looms, crochet hooks,

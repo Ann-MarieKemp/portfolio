@@ -1,8 +1,7 @@
 .single-project-box {
   display: flex;
-  /* border: 1px solid #16425b; */
+  border: 1px solid #A9A9A9;
   box-shadow: 3px;
-  background-color: #f1e0c5;
   margin-top: 2em;
   flex-direction: column;
   width: 75vw;
@@ -34,4 +33,12 @@
 }
 .video {
   flex-shrink: 1;
+}
+.youtube-embed {
+  margin-top: 10px;
+}
+.link-title-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
