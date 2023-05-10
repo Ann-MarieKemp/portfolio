@@ -16,7 +16,7 @@ export const twelveStepsDescription =
   export const IBMProjectOverview = "All projects Ann-Marie builds for IBM are intended for internal use only and therefore can't be described in detail here. Below are some non-specific examples of the type of contributions she has made in her time at the company."
 
   export const IBMProjectDescriptions = [
-    "Contributed features to a real time event driven notification service leveraging Kafka and Cassandra",
+    "Contributed features and test coverage to a real time event driven notification service leveraging Kafka and Cassandra",
     "Assisted in the building and maintaining of a RESTful service storing the setting preferences for hundreds of thousands of IBMers across multiple application tenants in a Cassandra database.",
     "Maintained a GraphQL layer combining resolvers for more than 20 RESTful and gRPC microservices to service a unified UI experience.",
     "Architected a service to allow offline access to enterprise directory information that has shared use between Swift and React Native applications.",
