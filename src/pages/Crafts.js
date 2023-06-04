@@ -2,10 +2,19 @@ import React from "react"
 import ProjectLink from "../components/ProjectLink"
 import Layout from "../components/Layout"
 import useCrafts from "../hooks/useCrafts"
-import Image from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Crafts = () => {
   const images = useCrafts()
+  console.log(images)
+  const craftArray = [
+    {linkTo: "/PaperCrafts", linkText: "Paper/Other", alt: "wedding table sign" , image: images[5].image},
+    {linkTo: "/BakingWeeks", linkText: "52 Weeks of Baking", alt: "baked goods" , image: images[2].image},
+    {linkTo: "/Knitting", linkText: "Knitting", alt: "socks" , image: images[3].image},
+    {linkTo: "/Crochet", linkText: "Crochet", alt: "crochet project" , image: images[4].image},
+    {linkTo: "/Spinning", linkText: "Spinning", alt: "spinning wheel bobbin" , image: images[1].image},
+    {linkTo: "/Weaving", linkText: "Weaving", alt: "woven blanket" , image: images[0]},
+  ]
 
   const linkStyle = {
     margin: 0,
@@ -16,77 +25,21 @@ const Crafts = () => {
         <p className="page-header crafts">Craft Projects</p>
         <div className="mainpage-project-link-container">
           <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/PaperCrafts"
-              linkText="Paper/Other"
-            />
-            <Image
-              alt="wedding table sign"
-              fluid={images[0].image}
-              className="craft-category-image"
-            />
-          </div>
-          <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/BakingWeeks"
-              linkText="52 Weeks of Baking"
-            />
-            <Image
-              alt="wedding table sign"
-              fluid={images[2].image}
-              className="craft-category-image"
-            />
-          </div>
-
-          <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/Knitting"
-              linkText="Knitting"
-            />
-            <Image
-              alt="wedding table sign"
-              fluid={images[3].image}
-              className="craft-category-image"
-            />
-          </div>
-          <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/Crochet"
-              linkText="Crochet"
-            />
-            <Image
-              alt="wedding table sign"
-              fluid={images[4].image}
-              className="craft-category-image"
-            />
-          </div>
-          <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/Spinning"
-              linkText="Spinning"
-            />
-            <Image
-              alt="spinning wheel bobbin"
-              fluid={images[1].image}
-              className="craft-category-image"
-            />
-          </div>
-          <div className="craft-category-div">
-            <ProjectLink
-              style={linkStyle}
-              linkTo="/Weaving"
-              linkText="Weaving"
-            />
-            <Image
-              alt="woven blanket"
-              fluid={images[5].image}
-              className="craft-category-image rotate"
-            />
+            {craftArray.map((craft) => {
+              return (
+              <>
+                <ProjectLink
+                  style={linkStyle}
+                  linkTo={craft.linkTo}
+                  linkText={craft.linkText}
+                />
+                <GatsbyImage
+                  alt={craft.alt}
+                  image={craft.image}
+                  className="craft-category-image"
+                />
+              </>)
+            })}
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 .link-container {
   width: 250px;
-  background-color: #16425b;
   height: 30px;
   border-radius: 3px;
   display: flex;
@@ -9,12 +8,17 @@
   text-align: center;
   align-content: center;
   margin-top: 1.5em;
+  font-size: 20px;
   padding: 0 10px;
   flex-wrap: wrap;
+  box-shadow: -0.5px 0.5px 3px 1px #A9A9A9;
 }
 .link-container:hover {
-  box-shadow: -0.5px 0.5px 3px 1px #e3d0d8;
+  border: 1px solid #FF3B3F;
+  box-shadow: none;
+  color: #FF3B3F
 }
+
 .fade-in {
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;

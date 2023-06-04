@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-const YoutubeKey = require("./secrets.js")
+// const YoutubeKey = require("./secrets.js")
 
 const path = require(`path`)
 module.exports = {
@@ -36,14 +36,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-instagram`,
+      resolve:  `gatsby-plugin-sharp`,
       options: {
-        username: `audiolindygirl`,
-      },
+        icon: ''
+      }
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     {
       resolve: "gatsby-source-imgur-gallery-albums",
       options: {
@@ -57,14 +57,6 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/Layout.js"),
         },
-      },
-    },
-    {
-      resolve: `gatsby-source-youtube-v2`,
-      options: {
-        channelId: ["UCHkIwY62iG1y23oWiPL9PQA"],
-        apiKey: YoutubeKey,
-        maxVideos: 50, // Defaults to 50
       },
     },
   ],

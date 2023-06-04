@@ -1,6 +1,6 @@
 #nav-bar-container {
   display: flex;
-  background-color: #16425b;
+  background-color: #CAEBF2;
   border-radius: 3px;
   height: 3.5rem;
   align-items: center;
@@ -10,14 +10,14 @@
 }
 .page-link {
   margin-right: 0.5em;
-  color: #fffffd;
+  color: #A9A9A9;
   margin-left: 0.5em;
   font-size: 18px;
   text-decoration: none;
   flex-shrink: 1;
 }
 .page-link:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
   text-decoration: underline;
 }
 img {
@@ -25,16 +25,48 @@ img {
   height: 32px;
 }
 .site-icons {
-  color: #fffffd;
+  color: #A9A9A9;
   font-size: 26px;
 }
 .site-icons:hover {
-  color: #e3d0d8;
+  color: #FF3B3F;
 }
 .icons-box {
   display: flex;
   justify-content: space-evenly;
   width: 300px;
-
   margin-right: 7px;
 }
+.portfolio-photo.small {
+  height: 50px;
+  width: 50px;
+}
+.nav-title-container {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.links-and-icons-container {
+  display: flex;
+  align-items: center;
+}
+span {
+  color: #FF3B3F;
+}
+.name-spacing {
+  margin-left: 10px;
+}
+/* span {
+  animation: textgrowth 1s ;
+} */
+
+/* @keyframes textgrowth {
+   0% {
+   font-size: 20px;
+   }
+   100% {
+   font-size: 25px;
+   }
+} */

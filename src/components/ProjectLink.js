@@ -2,31 +2,15 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import "../styles/ProjectLink.css"
 
-const ProjectLink = props => {
-  const [hover, setHover] = useState(false)
-  const { linkTo, linkText } = props
-
+const ProjectLink = ({ linkTo, linkText, last}) => {
   return (
-    <button
-      tabIndex={-1}
-      className="link-container fade-in"
-      onMouseEnter={() => {
-        setHover(true)
-      }}
-      onMouseLeave={() => {
-        setHover(false)
-      }}
-    >
-      {hover ? (
-        <Link className="category-link" to={linkTo}>
-          {linkText}
-        </Link>
-      ) : (
-        <Link className="category-link" to={linkTo}>
-          {linkText}
-        </Link>
-      )}
-    </button>
+    <Link className="category-link" to={linkTo}>
+      <button
+        tabIndex={-1}
+        className={last ? "link-container fade-in last-row" : "link-container fade-in"}
+      >{linkText}
+      </button>
+    </Link>
   )
 }
 

@@ -2,7 +2,7 @@ import React from "react"
 import resumeFile from "../constants/Ann-MarieKemp_Resume.pdf"
 import Layout from "../components/Layout"
 import useResume from "../hooks/useResume"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const Resume = () => {
   const resumePhoto = useResume()
@@ -12,7 +12,7 @@ const Resume = () => {
         <a className="sub-header resume" target="_blank" href={resumeFile}>
           Download PDF version of Ann-Marie's Resume
         </a>
-        <Image className="resume" fluid={resumePhoto} />
+        <GatsbyImage className="resume" image={resumePhoto} />
       </div>
     </Layout>
   )

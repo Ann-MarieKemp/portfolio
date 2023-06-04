@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles/BakingWeeks.css"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
 const PostInfo = ({ posts }) => {
@@ -14,7 +14,7 @@ const PostInfo = ({ posts }) => {
         return (
           <div className="weeks-of-baking-container">
             <div className="post-preview-container" key={post.title}>
-              <Image className={imageClass} fluid={post.image} />
+              <GatsbyImage className={imageClass} image={post?.image} />
               <Link className="category-link" to={`/${post.slug}`}>
                 {post.title}
               </Link>
