@@ -46,8 +46,8 @@ const AboutMe = props => {
             <p className="sub-header-cream">Other Interests</p>
 
             <p>
-              When she's not coding or working obsessively she
-              spends her time as a maker of things. She loves to be
+              When she's not coding she
+              spends what free time she has making things. She loves to be
               productive with her time and she inherited a love of baking and
               fiber arts from her mother and grandmother. This means she spends
               her free time using her spinning wheel, looms, crochet hooks,
@@ -56,13 +56,13 @@ const AboutMe = props => {
             </p>
             <br />
 
-            <p>
+            {/* <p>
               Check out some of her craft projects including the time she baked
               a new dessert every week for a year here:
             </p>
-            <ProjectLink linkTo="/Crafts" linkText="View Crafts" />
+            <ProjectLink linkTo="/Crafts" linkText="View Crafts" /> */}
           </div>
-          <div className="nyc-info">
+          <div className="nyc-info description-text">
             <p>
               Ann-Marie lives in Arizona with her wonderful husband, her son, and her cat Carnival. As a reward for making it this far
               down the page here are some photos of Carnival:

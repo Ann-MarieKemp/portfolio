@@ -19,9 +19,9 @@ const Carousel = ({ images }) => {
           return (
             <GatsbyImage
               className={imageIdx === index ? "opacity-full" : "opacity-half"}
+              objectFit="contain"
               key={image.childImageSharp.id}
               image={getImage(image.childImageSharp.gatsbyImageData)}
-              imgStyle={{ objectFit: "contain" }}
               alt="Picture of adorable Kitty Cat"
             />
           )

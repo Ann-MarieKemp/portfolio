@@ -12,7 +12,7 @@ import {
 // import useVideos from "../hooks/useVideos"
 
 const Projects = props => {
-  // const videos = useVideos()
+
   return (
     <Layout>
       <p className="page-header">Projects </p>

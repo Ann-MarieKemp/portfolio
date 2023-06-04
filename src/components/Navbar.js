@@ -29,9 +29,9 @@ const Navbar = props => {
           <Link className="page-link" to="/Projects">
             Projects
           </Link>
-          <Link className="page-link" to="/Crafts">
+          {/* <Link className="page-link" to="/Crafts">
             Crafts
-          </Link>
+          </Link> */}
           {/* <Link className="page-link" to="/ContactInfo">
             Contact
           </Link> */}

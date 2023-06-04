@@ -69,10 +69,10 @@ a:hover {
 }
 .portfolio-photo {
   border-radius: 50%;
-  box-shadow: 3px 1px 8px #A9A9A9;
+  /* box-shadow: 3px 1px 8px #A9A9A9; */
 }
 .portfolio-photo.gatsby-image-wrapper.main-photo {
-  margin-top: -2.5em;
+  /* margin-top: -2.5em; */
 }
 .main-page-header {
   margin-top: 2.5em;
