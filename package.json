@@ -22,7 +22,7 @@
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "fetch": "^1.1.0",
-    "gatsby": "^5.9.0",
+    "gatsby": "^5.9.1",
     "gatsby-mdx": "^1.0.0",
     "gatsby-plugin-image": "^3.9.0",
     "gatsby-plugin-manifest": "^5.10.0",
